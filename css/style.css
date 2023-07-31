@@ -325,6 +325,19 @@
     margin: 0px;
 }
 
+/* Fin Index */
+
+/* Galeria */
+
+.the-eras-tour {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #12112E;
+    background-color: #ffffff;
+    margin-top: 5px;
+    padding: 10px 20px;
+}
+
 
 /* footer */
 .footer {
