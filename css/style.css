@@ -1,0 +1,560 @@
+/* font: montserrat */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* fin de reset */
+
+/* header */
+.bg-personalizado {
+    background-color: #12112E;
+}
+
+.bg-personalizado-offcanvas {
+    background-color: #12112E;
+}
+
+.btn-close {
+    --bs-btn-close-color: #000;
+    --bs-btn-close-bg: url(../assets/icons/close.png);
+    --bs-btn-close-opacity: 0.5;
+    --bs-btn-close-hover-opacity: 0.75;
+    --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-btn-close-focus-opacity: 1;
+    --bs-btn-close-disabled-opacity: 0.25;
+    --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em 0.25em;
+    color: var(--bs-btn-close-color);
+    background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+    border: 0;
+    border-radius: 0.375rem;
+    opacity: var(--bs-btn-close-opacity);
+}
+
+.offcanvas {
+    color: #6F99AF;
+}
+
+.fa-bars {
+    margin-top: 5px;
+    color: #6F99AF;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+}
+
+.navbar-toggler {
+    --bs-navbar-toggler-border-color: none;
+    --bs-navbar-toggler-border-radius: 0;
+    --bs-navbar-toggler-focus-width: 0;
+    --bs-navbar-toggler-transition: none;
+    cursor: pointer;
+    border: none; 
+}
+
+.offcanvas-title {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+
+}
+
+.nav-link {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #6F99AF;
+}
+/* fin header */
+
+/* INDEX */
+
+.hero-section {
+    background: url("../assets/images/taylor_portada.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 920px;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    overflow: auto;
+}
+
+.hero-section-fijo {
+    position: sticky;
+    top: 0;    
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-section-fijo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    font-size: 70px;
+    color: #ffffff;
+    margin: 0;
+    padding-top: 500px;
+    letter-spacing: 3px;
+}
+
+.hero-section-fijo hr {
+    width: 200%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 15px auto; 
+    margin-left: -50%;
+    margin-right: -50%;
+    border-top: none;
+    opacity: 100%;
+}
+
+.hero-section-fijo h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* caracteristicas */
+
+.caracteristicas {
+    grid-area: destacado;
+    background: url("../assets/images/fondo_contenido_dos.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caracteristicas-lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.caracteristica {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.caracteristica dd {
+    margin: 0;
+}
+
+.caracteristica dt img {
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+.caracteristica h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #12112E;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.caracteristica p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #12112E;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Fechas tour */
+
+.tour-contenido {
+    background: url("../assets/images/fondo_contenido_tres.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 70px;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "area1 area1"
+        "c1 c2"
+        "area4 area4";
+}
+
+.tour-titulo {
+    grid-area: area1;
+}
+
+.columna-uno {
+    grid-area: c1;
+}
+
+.columna-dos {
+    grid-area: c2;
+}
+
+
+.columna-uno ol {
+    margin-bottom: 16px;
+    padding-left: 36px;
+}
+
+.columna-dos ol {
+    margin-bottom: 16px;
+    padding-left: 36px;
+}
+
+.columna-uno ol li{
+    list-style: none;
+    padding: 0;
+    margin: 40px;
+}
+
+.columna-dos ol li{
+    list-style: none;
+    padding: 0;
+    margin: 40px;
+    top: 100px;
+}
+
+.columna-dos ol {
+    display: block;
+    list-style-type: decimal;
+    margin-inline-start: 36px;
+}
+
+.tour-titulo h2{
+    font-size: 40px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+}
+
+.tour-titulo hr {
+    border: none;
+    border-top: 2px solid #ffffff;
+    width: 250px;
+    margin-left: 0px;
+    margin-top: 20px;
+    opacity: 100%;
+}
+
+.fecha, .estadio, .ubicacion, .status {
+    margin: 5px 0px;
+}
+
+.fecha {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.estadio {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+}
+
+.ubicacion {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B7B7B7;
+}
+
+.status {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FF0000;
+    margin: 2px 20px;
+}
+
+.inf-adicional {
+    grid-area: area4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inf-adicional p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    margin: 0px;
+}
+
+
+/* footer */
+.footer {
+    position:static;
+    left: 0;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#12112E;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-footer {
+    max-width: 100%;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.social-link {
+    padding: 10px;
+}
+
+.social-link a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.social-link a:hover {
+    background-color: #6F99AF;
+    color: #fff;
+}
+
+.footer-creador {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-text span {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+/* fin footer */
+
+/* MEDIA QUERIES */
+@media (max-width: 1099px) {
+    .hero-section-fijo hr {
+        width: 750px;
+        height: 2px;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 920px) {
+    .caracteristicas-lista {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .caracteristica p {
+        font-size: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media (max-width: 895px) {
+    .hero-section-fijo hr {
+        width: 550px;
+    }
+
+    .tour-contenido {
+        grid-template-columns: 1fr; /* Cambiamos a una sola columna */
+        grid-template-rows: repeat(3, auto); /* Ajustamos las filas automáticamente */
+        grid-template-areas: 
+            "area1"
+            "c1"
+            "c2"
+            "area4";
+        }
+
+        .columna-uno {
+            grid-area: c1;
+            justify-self: center;
+        }
+
+        .columna-dos {
+            grid-area: c2;
+            justify-self: center;
+        }
+
+        .columna-dos ol {
+            display: block;
+            list-style-type: decimal;
+            margin-inline-start: 36px;
+        }
+}
+
+@media (max-width:615px) {
+    .hero-section-fijo hr {
+        width: 400px;
+    }
+
+    .tour-contenido {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(3, auto); 
+        grid-template-areas: 
+            "area1"
+            "c1"
+            "c2"
+            "area4";
+        }
+
+        .columna-uno {
+            grid-area: c1;
+            justify-self: flex-start;
+        }
+
+        .columna-uno ol li {
+            list-style: none;
+            padding: 0;
+            margin-left: 0px;
+        }
+
+        .columna-uno ol {
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+
+        .columna-dos {
+            grid-area: c2;
+            justify-self: flex-start;
+        }
+
+        .columna-dos ol li {
+            list-style: none;
+            padding: 0;
+            margin-left: 0px;
+        }
+
+        .columna-dos ol {
+            margin-top: 0;
+            padding-left: 0;
+        }
+
+        .columna-dos ol {
+            display: block;
+            list-style-type: decimal;
+            margin-inline-start: 0px;
+        }
+
+        .inf-adicional {
+        justify-content: flex-start;
+        }
+        
+        .inf-adicional p {
+            text-align: left;
+            padding: 0px;
+        }
+}
+
+@media (max-width:615px) {
+    .hero-section-fijo hr {
+        width: 300px;
+    }
+
+    .caracteristicas {
+        padding: 0px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .caracteristica {
+        align-items: center;
+        text-align: left;
+        margin: 20px 0px 10px 40px;
+    }
+
+    .caracteristica h3 {
+        font-size: 25px;
+    }
+
+    .caracteristica p{
+        margin: 0px 0px 0px 0px;
+        font-size: 16px;
+    }
+
+    .caracteristicas-lista dl {
+        margin-bottom: 0px;
+    }
+
+    .tour-contenido {
+        padding-left: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

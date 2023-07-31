@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- logo en navegador -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <!-- Link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Link iconos bs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Link iconos font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Link al css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Taylor Swift</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-expand-md bg-personalizado">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo de Taylor Swift">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-personalizado-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Taylor Swift</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>                
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/tsfacts.html">TsFacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+<!--Inicio-->
+<main>
+    <article class="hero-section">
+        <div class="hero-section-fijo">
+            <h1>Taylor Swift</h1>
+            <hr>
+            <h2>Un viaje a través de sus eras</h2>
+        </div>
+    </article>
+
+    <!--caracteristicas-->
+    <section class="caracteristicas">
+            
+        <dl class="caracteristicas-lista">
+            <div class="caracteristica">
+                <dt><img src="assets/icons/music.png" alt="Icono de Álbumes"></dt>
+                <dd>
+                    <h3>Álbumes</h3>
+                    <p>Diez álbumes de estudio, tres en directo, dos EP, diecisiete álbumes recopilatorios y cincuenta y dos sencillos.</p>
+                </dd>
+            </div>
+    
+            <div class="caracteristica">
+                <dt><img src="assets/icons/guitarra.png" alt="Icono de Taylor's Version"></dt>
+                <dd>
+                    <h3>Taylor's Version</h3>
+                    <p>Las versiones regrabadas de sus álbumes anteriores, con Taylor Swift retomando el control de su música.</p>
+                </dd>
+            </div>
+    
+            <div class="caracteristica">
+                <dt><img src="assets/icons/disco.png" alt="Icono de From the Vault"></dt>
+                <dd>
+                    <h3>From the Vault</h3>
+                    <p>Canciones inéditas o no lanzadas previamente que se incluyen en las reediciones de los álbumes.</p>
+                </dd>
+            </div>
+        </dl>
+    </section>
+
+    <!-- Tour -->
+    <section class="tour-contenido">
+        <div class="tour-titulo">
+            <h2>Tour</h2>
+            <hr>
+        </div>
+            <div class="columna-uno">
+                <ol>
+                    <li>
+                        <div class="fecha">09 de Noviembre</div>
+                        <dvi class="estadio">Estadio River Plate</dvi>
+                        <div class="ubicacion">Buenos Aires, Argentina</div>
+                        <div class="status">Sold out</div>
+                    </li>
+                    <li>
+                        <div class="fecha">10 de Noviembre</div>
+                        <dvi class="estadio">Estadio River Plate</dvi>
+                        <div class="ubicacion">Buenos Aires, Argentina</div>
+                        <div class="status">Sold out</div>
+                    </li>
+                    <li>
+                        <div class="fecha">11 de Noviembre</div>
+                        <dvi class="estadio">Estadio River Plate</dvi>
+                        <div class="ubicacion">Buenos Aires, Argentina</div>
+                        <div class="status">Sold out</div>
+                    </li>
+                </ol>
+            </div>
+            <div class="columna-dos">
+                <ol>
+                    <li>
+                        <div class="fecha">17 de Noviembre</div>
+                        <dvi class="estadio">Estadio Nilton Santos</dvi>
+                        <div class="ubicacion">Rio de Janeiro, Brasil</div>
+                        <div class="status">Sold out</div>
+                    </li>
+                    <li>
+                        <div class="fecha">18 de Noviembre</div>
+                        <dvi class="estadio">Estadio Nilton Santos</dvi>
+                        <div class="ubicacion">Rio de Janeiro, Brasil</div>
+                        <div class="status">Sold out</div>
+                    </li>
+                    <li>
+                        <div class="fecha">19 de Noviembre</div>
+                        <dvi class="estadio">Estadio Nilton Santos</dvi>
+                        <div class="ubicacion">Rio de Janeiro, Brasil</div>
+                        <div class="status">Sold out</div>
+                    </li>
+                </ol>
+            </div>
+        <div class="inf-adicional">
+            <p>Taylor Swift anunció la primera serie de fechas internacionales para The Eras Tour. El Registro de Fan Verificado ya se encuentra disponible para los shows en México. Los fans pueden registrarse hasta el miércoles 7 de junio a las 11:59 p.m. (hora local). La venta de tickets comenzará el 13 de junio a las 2 p.m. (hora local). Se dará prioridad de acceso a los residentes de México. Solo los fans que reciban un correo electrónico confirmando su acceso podrán unirse a la fila.</p>
+        </div>
+    </section>
+
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="social-link">
+                    <a href="https://youtube.com/@TaylorSwift/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/taylorswift/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/taylorswift13?s=20" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=Et5J-zkoRyaLDzwv3Yvw-w" target="_blank"><i class="fab fa-spotify"></i></a>
+                </div>
+                <div class="footer-creador">
+                    <p class="footer-text">Web by<span>Valentina Abratte</span> © 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
