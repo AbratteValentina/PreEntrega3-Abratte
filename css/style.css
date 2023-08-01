@@ -531,7 +531,87 @@
     opacity: 1;
 }
 
+/* SPOTIFY */
 
+/* fearless */
+.spotify-fearless {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-fearless iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-fearless {
+    background-image: url("../assets/images/fearless_background.png");
+    height: 800px;
+}
+
+/* speak now */
+.spotify-speaknow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-speaknow iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-speaknow {
+    background-image: url("../assets/images/speaknow_background.png");
+    height: 800px;
+}
+
+/* red */
+.spotify-red {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-red iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-red {
+    background-image: url("../assets/images/red_background.png");
+    height: 800px;
+}
+
+/* reputation */
+.spotify-reputation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-reputation iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-reputation {
+    background-image: url("../assets/images/reputation_background.png");
+    height: 800px;
+}
 
 
 /* GALERIA */
