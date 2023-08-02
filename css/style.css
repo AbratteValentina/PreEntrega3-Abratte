@@ -327,9 +327,360 @@
 
 /* Fin Index */
 
-/* Galeria */
+/* DISCOGRAFÍA */
+
+.albumes-taylor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album {
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+/* fearless */
+
+.fearless-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(171, 122, 36, 0), rgba(171, 122, 36, 1));
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.fearless-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.fearless-text hr {
+    border: none;
+    border: 1px solid #ffffff;
+    width: 50px;
+    margin: 5px 0;
+    opacity: 100%;
+}
+
+.fearless-text h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.album:hover .fearless-text {
+    opacity: 1;
+}
+
+/* speak now */
+
+.speaknow-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(81, 22, 81, 0), rgba(81, 22, 81, 1));
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.speaknow-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.speaknow-text hr {
+    border: none;
+    border: 1px solid #ffffff;
+    width: 50px;
+    margin: 5px 0;
+    opacity: 100%;
+}
+
+.speaknow-text h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.album:hover .speaknow-text {
+    opacity: 1;
+}
+
+/* red */
+
+.red-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(149, 30, 26, 0), rgba(149, 30, 26, 1));
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.red-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.red-text hr {
+    border: none;
+    border: 1px solid #ffffff;
+    width: 50px;
+    margin: 5px 0;
+    opacity: 100%;
+}
+
+.red-text h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.album:hover .red-text {
+    opacity: 1;
+}
+
+/* reputation */
+
+.reputation-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.reputation-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.reputation-text hr {
+    border: none;
+    border: 1px solid #ffffff;
+    width: 50px;
+    margin: 5px 0;
+    opacity: 100%;
+}
+
+.reputation-text h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.album:hover .reputation-text {
+    opacity: 1;
+}
+
+/* SPOTIFY */
+
+/* fearless */
+.spotify-fearless {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-fearless iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-fearless {
+    background-image: url("../assets/images/fearless_background.png");
+    height: 800px;
+}
+
+/* speak now */
+.spotify-speaknow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-speaknow iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-speaknow {
+    background-image: url("../assets/images/speaknow_background.png");
+    height: 800px;
+}
+
+/* red */
+.spotify-red {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-red iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-red {
+    background-image: url("../assets/images/red_background.png");
+    height: 800px;
+}
+
+/* reputation */
+.spotify-reputation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-reputation iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-reputation {
+    background-image: url("../assets/images/reputation_background.png");
+    height: 800px;
+}
 
 
+/* GALERIA */
+
+.galeria-imagenes {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("../assets/images/fondo-galeria.png");
+    background-repeat: repeat;
+    padding: 7px;
+}
+
+.galeria-imagenes h2{
+    display: flex;
+    font-size: 40px;
+    color: #12112E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.galeria-imagenes img {
+    width: 650px;
+    height: 500px;
+    object-fit: cover;
+    padding: 7px;
+}
+
+.galeria-imagenes img:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/* Videos */
+
+.galeria-videos {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("../assets/images/fondo-galeria.png");
+    padding: 7px;
+}
+
+.galeria-videos h2{
+    display: flex;
+    font-size: 40px;
+    color: #12112E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.galeria-videos iframe {
+    width: 630px;
+    height: 385px;
+    padding: 7px;
+}
+
+.galeria-videos iframe:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
 
 
 /* footer */
@@ -454,6 +805,21 @@
         }
 }
 
+@media (max-width: 700px) {
+    .galeria-imagenes img {
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+        padding: 7px;
+    }
+
+    .galeria-videos iframe {
+        width: 460px;
+        height: 215px;
+        padding: 7px;
+    }
+}
+
 @media (max-width:615px) {
     .hero-section-fijo hr {
         width: 400px;
@@ -551,6 +917,15 @@
 
     .tour-contenido {
         padding-left: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    .galeria-imagenes img {
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+        padding: 7px;
     }
 }
 
