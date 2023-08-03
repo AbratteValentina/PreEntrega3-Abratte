@@ -10,7 +10,7 @@
 }
 /* fin de reset */
 
-/* header */
+/* HEADER */
 .bg-personalizado {
     background-color: #12112E;
 }
@@ -88,10 +88,10 @@
 .nav-link:hover {
     color: #6F99AF;
 }
-/* fin header */
+/* FIN HEADER */
 
 /* INDEX */
-
+/* hero section */
 .hero-section {
     background: url("../assets/images/taylor_portada.png") no-repeat center center fixed;
     background-size: cover;
@@ -139,9 +139,9 @@
     color: #ffffff;
     margin: 0;
 }
+/* fin hero section */
 
 /* caracteristicas */
-
 .caracteristicas {
     grid-area: destacado;
     background: url("../assets/images/fondo_contenido_dos.png");
@@ -196,9 +196,9 @@
     margin-left: 50px;
     margin-right: 50px;
 }
+/* fin caracteristicas */
 
-/* Fechas tour */
-
+/* fechas tour */
 .tour-contenido {
     background: url("../assets/images/fondo_contenido_tres.png");
     background-size: cover;
@@ -324,847 +324,9 @@
     padding: 50px;
     margin: 0px;
 }
+/* fin fechas tour */
 
-/* Fin Index */
-
-/* DISCOGRAFÍA */
-
-.albumes-taylor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.album {
-    position: relative;
-    transition: 0.5s ease;
-}
-
-.album img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: 0.5s ease;
-}
-
-/*Enlaces para dirigirse a cada album dentro de la página*/
-.album a {
-    display: block; 
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 0;
-    left: 0;
-    z-index: 1; 
-}
-
-/* fearless */
-
-.fearless-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(171, 122, 36, 0), rgba(171, 122, 36, 1));
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-}
-
-.fearless-text h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.fearless-text hr {
-    border: none;
-    border: 1px solid #ffffff;
-    width: 50px;
-    margin: 5px 0;
-    opacity: 100%;
-}
-
-.fearless-text h3 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 5px;
-}
-
-.album:hover .fearless-text {
-    opacity: 1;
-}
-
-/* speak now */
-
-.speaknow-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(81, 22, 81, 0), rgba(81, 22, 81, 1));
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-}
-
-.speaknow-text h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.speaknow-text hr {
-    border: none;
-    border: 1px solid #ffffff;
-    width: 50px;
-    margin: 5px 0;
-    opacity: 100%;
-}
-
-.speaknow-text h3 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 5px;
-}
-
-.album:hover .speaknow-text {
-    opacity: 1;
-}
-
-/* red */
-
-.red-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(149, 30, 26, 0), rgba(149, 30, 26, 1));
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-}
-
-.red-text h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.red-text hr {
-    border: none;
-    border: 1px solid #ffffff;
-    width: 50px;
-    margin: 5px 0;
-    opacity: 100%;
-}
-
-.red-text h3 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 5px;
-}
-
-.album:hover .red-text {
-    opacity: 1;
-}
-
-/* reputation */
-
-.reputation-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-}
-
-.reputation-text h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.reputation-text hr {
-    border: none;
-    border: 1px solid #ffffff;
-    width: 50px;
-    margin: 5px 0;
-    opacity: 100%;
-}
-
-.reputation-text h3 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 5px;
-}
-
-.album:hover .reputation-text {
-    opacity: 1;
-}
-
-/* SPOTIFY */
-
-.spotify-fearless,
-.spotify-speaknow,
-.spotify-red,
-.spotify-reputation {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.spotify-fearless,
-.spotify-speaknow,
-.spotify-red,
-.spotify-reputation {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 800px;
-}
-
-/* fearless */
-.spotify-fearless {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.spotify-fearless iframe {
-    width: 450px;
-    height: 500px;
-    border-radius: 12px;
-}
-
-.spotify-fearless {
-    background-image: url("../assets/images/fearless_background.png");
-    height: 800px;
-}
-
-/* speak now */
-.spotify-speaknow {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.spotify-speaknow iframe {
-    width: 450px;
-    height: 500px;
-    border-radius: 12px;
-}
-
-.spotify-speaknow {
-    background-image: url("../assets/images/speaknow_background.png");
-    height: 800px;
-}
-
-/* red */
-.spotify-red {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.spotify-red iframe {
-    width: 450px;
-    height: 500px;
-    border-radius: 12px;
-}
-
-.spotify-red {
-    background-image: url("../assets/images/red_background.png");
-    height: 800px;
-}
-
-/* reputation */
-.spotify-reputation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.spotify-reputation iframe {
-    width: 450px;
-    height: 500px;
-    border-radius: 12px;
-}
-
-.spotify-reputation {
-    background-image: url("../assets/images/reputation_background.png");
-    height: 800px;
-}
-
-
-@media (max-width: 920px) {
-
-    .fearless-text h2 {
-        font-size:40px;
-    }
-
-    .fearless-text h3 {
-        font-size: 22px;
-    }
-
-    .speaknow-text h2 {
-        font-size:40px;
-    }
-
-    .speaknow-text h3 {
-        font-size: 22px;
-    }
-
-    .red-text h2 {
-        font-size:40px;
-    }
-
-    .red-text h3 {
-        font-size: 22px;
-    }
-
-    .reputation-text h2 {
-        font-size:40px;
-    }
-
-    .reputation-text h3 {
-        font-size: 22px;
-    }
-}
-
-
-
-
-/* GALERIA */
-
-.galeria-imagenes {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-image: url("../assets/images/fondo-galeria.png");
-    background-repeat: repeat;
-    padding: 7px;
-}
-
-.galeria-imagenes h2{
-    display: flex;
-    font-size: 40px;
-    color: #12112E;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    letter-spacing: 10px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.galeria-imagenes img {
-    width: 650px;
-    height: 500px;
-    object-fit: cover;
-    padding: 7px;
-}
-
-.galeria-imagenes img:hover {
-    opacity: 0.5;
-    transition: 0.5s;
-}
-
-/* Videos */
-
-.galeria-videos {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-image: url("../assets/images/fondo-galeria.png");
-    padding: 7px;
-}
-
-.galeria-videos h2{
-    display: flex;
-    font-size: 40px;
-    color: #12112E;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    letter-spacing: 10px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.galeria-videos iframe {
-    width: 630px;
-    height: 385px;
-    padding: 7px;
-}
-
-.galeria-videos iframe:hover {
-    opacity: 0.5;
-    transition: 0.5s;
-}
-
-
-
-
-
-
-/* TS FACTS */
-
-/* Carousel */
-.carousel {
-    margin-top: 50px;
-}
-
-/* media queries para carousel */
-
-@media (max-width: 600px) {
-    .carousel-item h5 {
-        font-size: 18px;
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-    }
-}
-
-@media (max-width: 450px) {
-    .carousel-item h5 {
-        font-size: 15px;
-    }
-
-    .carousel-item p {
-        font-weight: 300;
-        font-size: 13px;
-    }
-}
-/* fin Carousel */
-
-/* Cards  */
-.taylor-cards {
-    background-color: #08081c;
-    height: 100%;
-    display: grid;
-    place-items: center center;
-    font-family: 'Montserrat', sans-serif;
-    padding: 50px 0 50px 0;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    padding: 20px;
-    grid-gap: 40px;
-}
-
-.card {
-    background-color: #12112E;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
-}
-
-.card-container {
-    position: relative;
-    clip-path: polygon(0 0,100% 0,100% 85%, 0 100%);
-}
-
-.card-container img {
-    width: 100%;
-    display: block;
-    border-radius: 20px 20px 0 0;
-}
-
-.card-container:after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 20px 20px 0 0;
-    opacity: 0.7;
-}
-
-.card-container.gradient:hover::after {
-    background-image: linear-gradient(135deg, #12112E, #ff9900);
-}
-
-.card-container.gradientdos:hover::after {
-    background-image: linear-gradient(135deg, #12112E, #0100ec);
-}
-
-.card-container.gradienttres:hover::after {
-    background-image: linear-gradient(135deg, #12112E, #fb36f4);
-}
-
-.detalles {
-    padding: 20px 10px;
-}
-
-.detalles h3 {
-    color: #fff;
-    font-weight: 700;
-    font-size: 18px;
-    margin: 10px 0 15px 15px;
-}
-
-.detalles p {
-    color: #B7B7B7;
-    font-size: 15px;
-    line-height: 30px;
-    font-weight: 400;
-    margin-left: 15px;
-}
-
-/* media queries para cards */
-
-@media (max-width: 450px) {
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-}
-
-@media (max-width: 450px) {
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-
-/* fin Cards */
-
-/* Seccion para datos */
-
-.ts-facts {
-    background: url("../assets/images/taylor-datos.png");
-    background-size: cover;
-    padding: 60px;;
-}
-
-.container-rectangulo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 100px 0 100px 0;
-}
-
-.rectangulo {
-    width: 200px;
-    height: 150px;
-    border: 2px solid #fff;
-    margin: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.rectangulo h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:700;
-    font-size: 35px;
-    color: #6F99AF;
-    margin: 0;
-}
-
-.rectangulo P {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:400;
-    font-size: 15px;
-    color: #FFF;
-    text-align: center;
-    margin: 0;
-}
-/* fin Seccion para datos */
-
-/* Fin TS FACTS */
-
-
-/* CONTACTO */
-.contacto {
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: url(../assets/images/contacto-background.png);
-    background-size: cover;
-}
-
-
-.contacto .conteido {
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.contacto .contenido h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-    font-weight: 700;
-    color: #fff;
-}
-
-.contacto .contenido p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-}
-
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .contactInfo {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.container .contactInfo .box {
-    position: relative;
-    padding: 20px 0;
-    display: flex;
-}
-
-.container .contactInfo .box .icon {
-    min-width: 60px;
-    height: 60px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
-}
-
-.container .contactInfo .box .text {
-    display: flex;
-    margin-left: 20px;
-    font-size: 16px;
-    color: #fff;
-    flex-direction: column;
-    font-weight: 300;
-}
-
-.container .contactInfo .box .text h3 {
-    font-weight: 500;
-    color: #6F99AF;
-}
-
-.contactForm {
-    width: 40%;
-    padding: 40px;
-    background-color: #fff;
-}
-
-.contactForm h2 {
-    font-size: 30px;
-    color: #6F99AF;
-    font-weight: 700;
-}
-
-.contactForm .inputBox {
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #12112E;
-    outline: none;
-    resize: none;
-}
-
-.contactForm .inputBox span {
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #494949;
-}
-
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
-    color: #e91e63;
-    font-size: 12px;
-    transform: translateY(-20px);
-}
-
-.contactForm .inputBox input[type="submit"] {
-    width: 100px;
-    background: #6F99AF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.contactForm .inputBox input[type="submit"]:hover {
-    background-color: #12112E;
-}
-
-
-@media (max-width: 991px) {
-    .contact {
-        padding: 50px;
-    }
-    
-    .container {
-        flex-direction: column;
-    }
-
-    .container .contactInfo {
-        margin-bottom: 40px;
-    }
-
-    .container .contactInfo,
-    .contactForm {
-        width: 100%;
-    }
-}
-
-
-/* footer */
-.footer {
-    position:static;
-    left: 0;
-    margin-bottom: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:#12112E;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.container-footer {
-    max-width: 100%;
-    margin: 0 auto;
-    bottom: 0;
-}
-
-.footer-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.social-link {
-    padding: 10px;
-}
-
-.social-link a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    margin-right: 10px;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-    color: #000;
-    transition: background-color 0.3s ease;
-}
-
-.social-link a:hover {
-    background-color: #6F99AF;
-    color: #fff;
-}
-
-.footer-creador {
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    margin: 0;
-}
-
-.footer-text span {
-    margin-left: 5px;
-    margin-right: 5px;
-    font-weight: bold;
-}
-/* fin footer */
-
-
-
-/* MEDIA QUERIES */
+/* index media queries */
 @media (max-width: 1099px) {
     .hero-section-fijo hr {
         width: 750px;
@@ -1186,12 +348,10 @@
     }
 }
 
-
 @media (max-width: 895px) {
     .hero-section-fijo hr {
         width: 550px;
     }
-
 
     .tour-contenido {
         grid-template-columns: 1fr; /* Cambiamos a una sola columna */
@@ -1334,16 +494,327 @@
         padding-left: 50px;
     }
 }
+/* fin media queries index */
+/* FIN INDEX */
 
-@media (max-width: 550px) {
-    .galeria-imagenes img {
-        width: 350px;
-        height: 200px;
-        object-fit: cover;
-        padding: 7px;
-    }
+/* DISCOGRAFÍA */
+/* albumes */
+.albumes-taylor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
+.album {
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+/*Enlaces para dirigirse a cada album dentro de la página*/
+.album a {
+    display: block; 
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+/* fearless */
+.fearless-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(171, 122, 36, 0), rgba(171, 122, 36, 1));
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.fearless-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.fearless-text hr {
+    border: none;
+    border: 1px solid #ffffff;
+    width: 50px;
+    margin: 5px 0;
+    opacity: 100%;
+}
+
+.fearless-text h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.album:hover .fearless-text {
+    opacity: 1;
+}
+
+/* speak now */
+.speaknow-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(81, 22, 81, 0), rgba(81, 22, 81, 1));
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.speaknow-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.speaknow-text hr {
+    border: none;
+    border: 1px solid #ffffff;
+    width: 50px;
+    margin: 5px 0;
+    opacity: 100%;
+}
+
+.speaknow-text h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.album:hover .speaknow-text {
+    opacity: 1;
+}
+
+/* red */
+.red-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(149, 30, 26, 0), rgba(149, 30, 26, 1));
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.red-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.red-text hr {
+    border: none;
+    border: 1px solid #ffffff;
+    width: 50px;
+    margin: 5px 0;
+    opacity: 100%;
+}
+
+.red-text h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.album:hover .red-text {
+    opacity: 1;
+}
+
+/* reputation */
+.reputation-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.reputation-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.reputation-text hr {
+    border: none;
+    border: 1px solid #ffffff;
+    width: 50px;
+    margin: 5px 0;
+    opacity: 100%;
+}
+
+.reputation-text h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.album:hover .reputation-text {
+    opacity: 1;
+}
+/* fin albumes */
+
+/* Spotify */
+.spotify-fearless,
+.spotify-speaknow,
+.spotify-red,
+.spotify-reputation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify-fearless,
+.spotify-speaknow,
+.spotify-red,
+.spotify-reputation {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+}
+
+/* fearless */
+.spotify-fearless {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-fearless iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-fearless {
+    background-image: url("../assets/images/fearless_background.png");
+    height: 800px;
+}
+
+/* speak now */
+.spotify-speaknow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-speaknow iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-speaknow {
+    background-image: url("../assets/images/speaknow_background.png");
+    height: 800px;
+}
+
+/* red */
+.spotify-red {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-red iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-red {
+    background-image: url("../assets/images/red_background.png");
+    height: 800px;
+}
+
+/* reputation */
+.spotify-reputation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spotify-reputation iframe {
+    width: 450px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.spotify-reputation {
+    background-image: url("../assets/images/reputation_background.png");
+    height: 800px;
+}
+/* fin spotify */
+
+/* discografia media queries */
 @media (max-width: 920px) {
     .albumes-taylor {
         flex-wrap: wrap;
@@ -1364,7 +835,7 @@
     .spotify-reputation {
         height: 600px; 
     }
-}
+
 .spotify-fearless iframe,
 .spotify-speaknow iframe,
 .spotify-red iframe,
@@ -1374,6 +845,38 @@
     border-radius: 12px;
 }
 
+    .fearless-text h2 {
+        font-size:40px;
+    }
+
+    .fearless-text h3 {
+        font-size: 22px;
+    }
+
+    .speaknow-text h2 {
+        font-size:40px;
+    }
+
+    .speaknow-text h3 {
+        font-size: 22px;
+    }
+
+    .red-text h2 {
+        font-size:40px;
+    }
+
+    .red-text h3 {
+        font-size: 22px;
+    }
+
+    .reputation-text h2 {
+        font-size:40px;
+    }
+
+    .reputation-text h3 {
+        font-size: 22px;
+    }
+}
 
 @media (max-width: 550px) {
 .spotify-fearless iframe,
@@ -1385,3 +888,502 @@
     border-radius: 12px;
 }
 }
+/* fin media queries discografia */
+/* FIN DISCOGRAFÍA */
+
+/* GALERIA */
+/* galeria de imagenes */
+.galeria-imagenes {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("../assets/images/fondo-galeria.png");
+    background-repeat: repeat;
+    padding: 7px;
+}
+
+.galeria-imagenes h2{
+    display: flex;
+    font-size: 40px;
+    color: #12112E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.galeria-imagenes img {
+    width: 650px;
+    height: 500px;
+    object-fit: cover;
+    padding: 7px;
+}
+
+.galeria-imagenes img:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+/* fin galeria de imagenes */
+
+/* Videos */
+.galeria-videos {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("../assets/images/fondo-galeria.png");
+    padding: 7px;
+}
+
+.galeria-videos h2{
+    display: flex;
+    font-size: 40px;
+    color: #12112E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.galeria-videos iframe {
+    width: 630px;
+    height: 385px;
+    padding: 7px;
+}
+
+.galeria-videos iframe:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+/* fin videos */
+
+
+@media (max-width: 700px) {
+    .galeria-imagenes img {
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+        padding: 7px;
+    }
+
+    .galeria-videos iframe {
+        width: 460px;
+        height: 215px;
+        padding: 7px;
+    }
+}
+
+@media (max-width: 550px) {
+    .galeria-imagenes img {
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+        padding: 7px;
+    }
+}
+/* media queries galeria de imagenes */
+/* FIN DISCOGRAFÍA */
+
+/* TS FACTS */
+/* Carousel */
+.carousel {
+    margin-top: 50px;
+}
+
+/* media queries para carousel */
+@media (max-width: 600px) {
+    .carousel-item h5 {
+        font-size: 18px;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 450px) {
+    .carousel-item h5 {
+        font-size: 15px;
+    }
+
+    .carousel-item p {
+        font-weight: 300;
+        font-size: 13px;
+    }
+}
+/* fin Carousel y media queries para carousel */
+
+/* Cards */
+.taylor-cards {
+    background-color: #08081c;
+    height: 100%;
+    display: grid;
+    place-items: center center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 0 50px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+
+.card {
+    background-color: #12112E;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.card-container {
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 85%, 0 100%);
+}
+
+.card-container img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-container:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.card-container.gradient:hover::after {
+    background-image: linear-gradient(135deg, #12112E, #ff9900);
+}
+
+.card-container.gradientdos:hover::after {
+    background-image: linear-gradient(135deg, #12112E, #0100ec);
+}
+
+.card-container.gradienttres:hover::after {
+    background-image: linear-gradient(135deg, #12112E, #fb36f4);
+}
+
+.detalles {
+    padding: 20px 10px;
+}
+
+.detalles h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 10px 0 15px 15px;
+}
+
+.detalles p {
+    color: #B7B7B7;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+/* fin cards */
+
+/* media queries para cards */
+@media (max-width: 450px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 450px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+/* fin media queries para cards */
+
+/* Seccion para datos */
+.ts-facts {
+    background: url("../assets/images/taylor-datos.png");
+    background-size: cover;
+    padding: 60px;;
+}
+
+.container-rectangulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+}
+
+.rectangulo {
+    width: 200px;
+    height: 150px;
+    border: 2px solid #fff;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangulo h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    font-size: 35px;
+    color: #6F99AF;
+    margin: 0;
+}
+
+.rectangulo P {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    font-size: 15px;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+}
+/* fin Seccion para datos */
+/* Fin TS FACTS */
+
+/* CONTACTO */
+/* formulario de contacto */
+.contacto {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../assets/images/contacto-background.png);
+    background-size: cover;
+}
+
+.contacto .conteido {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacto .contenido h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contacto .contenido p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #6F99AF;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #6F99AF;
+    font-weight: 700;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #12112E;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #494949;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #6F99AF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contactForm .inputBox input[type="submit"]:hover {
+    background-color: #12112E;
+}
+/* fin formulario de contacto */
+
+/* formulario de contacto media queries */
+@media (max-width: 991px) {
+    .contact {
+        padding: 50px;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contactInfo {
+        margin-bottom: 40px;
+    }
+
+    .container .contactInfo,
+    .contactForm {
+        width: 100%;
+    }
+}
+/* fin formulario de contacto media queries */
+/* FIN CONTACTO */
+
+/* FOOTER */
+.footer {
+    position:static;
+    left: 0;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#12112E;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-footer {
+    max-width: 100%;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.social-link {
+    padding: 10px;
+}
+
+.social-link a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.social-link a:hover {
+    background-color: #6F99AF;
+    color: #fff;
+}
+
+.footer-creador {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-text span {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+/* FIN FOOTER */
+
+
