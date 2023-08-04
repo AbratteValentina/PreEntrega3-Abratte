@@ -1058,6 +1058,7 @@
     left: 0;
     border-radius: 20px 20px 0 0;
     opacity: 0.7;
+    transition: 0.5s ease;
 }
 
 .card-container.gradient:hover::after {
@@ -1166,10 +1167,10 @@
     background-size: cover;
 }
 
-.contacto .conteido {
+.contacto .contenido {
     max-width: 800px;
-    text-align: center;
     margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 .contacto .contenido h2{
@@ -1177,6 +1178,7 @@
     font-size: 35px;
     font-weight: 700;
     color: #fff;
+    text-align: center;
 }
 
 .contacto .contenido p{
@@ -1184,6 +1186,7 @@
     font-size: 18px;
     font-weight: 400;
     color: #fff;
+    text-align: center;
 }
 
 .container {
