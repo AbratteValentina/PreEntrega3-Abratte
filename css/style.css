@@ -1296,6 +1296,19 @@
 }
 /* fin formulario de contacto */
 
+/* mapa */
+.mapa {
+    margin-top: 50px;
+    width: 50vh;
+    height: 40vh; 
+}
+
+.mapa iframe {
+    width: 100%; 
+    height: 100%; 
+    border: 0;
+}
+
 /* formulario de contacto media queries */
 @media (max-width: 991px) {
     .contact {
@@ -1316,6 +1329,15 @@
     }
 }
 /* fin formulario de contacto media queries */
+
+/* mapa media queries */
+@media (max-width: 630px) {
+    .mapa {
+        margin-top: 50px;
+        width: 30vh;
+        height: 20vh; 
+    }
+}
 /* FIN CONTACTO */
 
 /* FOOTER */
