@@ -1,0 +1,29 @@
+// Importación de fuentes de Google Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$font-family: 'Montserrat', sans-serif;
+
+// Colores principales
+$primary-color: #12112E;
+$accent-color: #6F99AF;
+
+// Color de texto
+$text-color: #FFF;
+$alternative-textcolor: #12112E;
+
+//
+
+@mixin flex-center($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+

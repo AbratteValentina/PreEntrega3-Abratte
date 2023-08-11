@@ -1,0 +1,408 @@
+//hero section
+.hero {
+	background: url("../assets/images/taylor_portada.png") no-repeat center center fixed;
+	background-size: cover;
+	height: 920px;
+	width: 100%;
+	margin-top: 0;
+	@include flex-center (row);
+	overflow: auto;
+}
+
+.hero__section {
+	position: sticky;
+	top: 0;
+	padding: 20px;
+	text-align: center;
+	h1 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 70px;
+		color: $text-color;
+		margin: 0;
+		padding-top: 500px;
+		letter-spacing: 3px;
+	}
+	hr {
+		width: 200%;
+		height: 2px;
+		background-color: $text-color;
+		margin: 15px auto;
+		margin-left: -50%;
+		margin-right: -50%;
+		border-top: none;
+		opacity: 100%;
+	}
+	h2 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 22px;
+		color: $text-color;
+		margin: 0;
+	}
+}
+
+//caracteristicas
+.caracteristicas {
+	grid-area: destacado;
+	background: url("../assets/images/fondo_contenido_dos.png");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	padding: 60px;
+	margin-top: 0px;
+	@include flex-center(row);
+}
+.caracteristicas__lista {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.caracteristicas__item {
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	dd {
+		margin: 0;
+	}
+	dt {
+		img {
+			padding: 5px;
+			width: 70px;
+			height: 70px;
+		}
+	}
+	h3 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		color: $primary-color;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	p {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		color: $alternative-textcolor;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+}
+
+//Tour
+.tour {
+    background: url("../assets/images/fondo_contenido_tres.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 70px;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "area1 area1"
+        "c1 c2"
+        "area4 area4";
+
+    &__titulo {
+        grid-area: area1;
+        h2 {
+            font-size: 40px;
+            color: #ffffff;
+            font-family: $font-family;
+            font-weight: 500;
+            letter-spacing: 10px;
+        } 
+
+        hr {
+        border: none;
+        border-top: 2px solid #ffffff;
+        width: 250px;
+        margin-left: 0px;
+        margin-top: 20px;
+        opacity: 100%;
+        }
+    }
+
+    &__columnauno .info{
+        grid-area: c1;
+        
+
+        &__ol  {
+            list-style: none;
+            padding: 0; 
+            }
+
+        &__li {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                }
+                
+                &__fecha,
+                &__estadio,
+                &__ubicacion,
+                &__status {
+                    margin: 1px 0;
+                }
+
+                &__fecha {
+                    font-family: $font-family;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $text-color;
+                }
+
+                &__estadio {
+                    font-family: $font-family;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: $text-color;
+                    white-space: nowrap;
+                }
+
+                &__ubicacion {
+                        font-family: $font-family;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $text-color;
+                }
+
+                &__status {
+                    font-family: $font-family;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #FF0000;
+                    margin: 2px 20px;
+                }
+
+            }
+
+        &__columnados .info{
+            grid-area: c2;
+
+        &__ol {
+            list-style: none;
+            padding: 0; 
+            }
+
+        &__li {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                }
+                
+                &__fecha,
+                &__estadio,
+                &__ubicacion,
+                &__status {
+                    margin: 3px 0;
+                }
+
+                &__fecha {
+                    font-family: $font-family;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $text-color;
+                }
+
+                &__estadio {
+                    font-family: $font-family;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: $text-color;
+                    white-space: nowrap;
+                }
+
+                &__ubicacion {
+                        font-family: $font-family;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $text-color;
+                }
+
+                &__status {
+                    font-family: $font-family;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #FF0000;
+                    margin: 2px 20px;
+                }
+            }
+
+        &__informacion {
+            grid-area: area4;
+            display: flex;
+            align-items: center;
+
+            p {
+                font-family: $font-family;
+                font-size: 16px;
+                font-weight: 400;
+                color: $text-color;
+                text-align: center;
+                padding: 50px;
+                margin: 0px;
+            }
+        }
+    }
+
+//MEDIA QUERIES
+@media (max-width: 1099px) {
+    .hero__section {
+        hr {
+        width: 750px;
+        height: 2px;
+        margin: 15px auto;
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    .caracteristicas__lista {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .caracteristicas__item { 
+        p {
+        font-size: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+        }
+    }
+}
+
+@media (max-width: 895px) {
+    .hero__section { hr {
+        width: 550px;
+        }
+    }
+
+    .caracteristicas__item {
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .tour {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "area1"
+            "c1"
+            "c2"
+            "area4";
+
+            &__columnauno {
+                grid-area: c1;
+                justify-self: center;
+            }
+
+            &__columnados {
+                grid-area: c2;
+                justify-self: center;
+            }
+        }
+    } 
+
+    @media (max-width: 615px) {
+        .hero__section {
+            hr {
+                width: 300px;
+            }
+        }
+
+        .tour {
+            grid-template-columns: 1fr; 
+            grid-template-rows: repeat(3, auto); 
+            grid-template-areas: 
+                "area1"
+                "c1"
+                "c2"
+                "area4";
+    
+            &__columnauno {
+                grid-area: c1;
+                justify-self: flex-start;
+                margin: 30px 0 0 0;
+            }
+    
+                ol li {
+                    list-style: none;
+                    padding: 0;
+                    margin-left: 0;
+                }
+    
+                ol {
+                    margin-bottom: 0;
+                    padding-left: 0;
+                }
+    
+            &__columnados {
+                    grid-area: c2;
+                    justify-self: flex-start;
+                    margin-bottom: 30px;
+            }
+    
+            &__informacion {
+                justify-content: flex-start;
+    
+                p {
+                    text-align: left;
+                    padding: 0;
+                }
+            }
+        }    
+
+        .caracteristicas {
+            &__lista {
+                @include flex-center(column);
+                padding: 0;
+                margin-top: 0;
+            }
+    
+            dl {
+                margin-bottom: 0;
+            }
+    
+            &__item {
+                text-align: center;
+                padding: 20px 0;
+    
+                dd {
+                    margin: 0;
+                }
+    
+                dt {
+                    img {
+                        padding: 5px;
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+    
+                h3 {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    font-size: 25px;
+                    color: $primary-color;
+                    margin: 10px 0;
+                }
+    
+                p {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $alternative-textcolor;
+                    margin: 0;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }

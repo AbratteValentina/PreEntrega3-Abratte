@@ -1,0 +1,77 @@
+.bg-personalizado {
+    background-color:$primary-color;
+}
+
+.bg-personalizado-offcanvas {
+    background-color: $primary-color;
+}
+
+.btn-close {
+    --bs-btn-close-color: #000;
+    --bs-btn-close-bg: url(../assets/icons/close.png);
+    --bs-btn-close-opacity: 0.5;
+    --bs-btn-close-hover-opacity: 0.75;
+    --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-btn-close-focus-opacity: 1;
+    --bs-btn-close-disabled-opacity: 0.25;
+    --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em 0.25em;
+    color: var(--bs-btn-close-color);
+    background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+    border: 0;
+    border-radius: 0.375rem;
+    opacity: var(--bs-btn-close-opacity);
+}
+
+.offcanvas {
+    color: $accent-color;
+}
+
+.fa-bars {
+    margin-top: 5px;
+    color: $accent-color;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+}
+
+.navbar-toggler {
+    --bs-navbar-toggler-border-color: none;
+    --bs-navbar-toggler-border-radius: 0;
+    --bs-navbar-toggler-focus-width: 0;
+    --bs-navbar-toggler-transition: none;
+    cursor: pointer;
+    border: none; 
+}
+
+.offcanvas-title {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.nav-link {
+    color: #fff;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    
+        &:hover {
+            color: $accent-color;
+        }
+}
+

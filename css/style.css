@@ -1,1414 +1,583 @@
-/* font: montserrat */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-/* reset */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-/* fin de reset */
 
-/* HEADER */
 .bg-personalizado {
-    background-color: #12112E;
+  background-color: #12112E;
 }
 
 .bg-personalizado-offcanvas {
-    background-color: #12112E;
+  background-color: #12112E;
 }
 
 .btn-close {
-    --bs-btn-close-color: #000;
-    --bs-btn-close-bg: url(../assets/icons/close.png);
-    --bs-btn-close-opacity: 0.5;
-    --bs-btn-close-hover-opacity: 0.75;
-    --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-    --bs-btn-close-focus-opacity: 1;
-    --bs-btn-close-disabled-opacity: 0.25;
-    --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
-    box-sizing: content-box;
-    width: 1em;
-    height: 1em;
-    padding: 0.25em 0.25em;
-    color: var(--bs-btn-close-color);
-    background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
-    border: 0;
-    border-radius: 0.375rem;
-    opacity: var(--bs-btn-close-opacity);
+  --bs-btn-close-color: #000;
+  --bs-btn-close-bg: url(../assets/icons/close.png);
+  --bs-btn-close-opacity: 0.5;
+  --bs-btn-close-hover-opacity: 0.75;
+  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-btn-close-focus-opacity: 1;
+  --bs-btn-close-disabled-opacity: 0.25;
+  --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: var(--bs-btn-close-color);
+  background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+  border: 0;
+  border-radius: 0.375rem;
+  opacity: var(--bs-btn-close-opacity);
 }
 
 .offcanvas {
-    color: #6F99AF;
+  color: #6F99AF;
 }
 
 .fa-bars {
-    margin-top: 5px;
-    color: #6F99AF;
+  margin-top: 5px;
+  color: #6F99AF;
 }
 
 .navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
 }
 
 .navbar-toggler-icon {
-    background-image: none;
+  background-image: none;
 }
 
 .navbar-toggler {
-    --bs-navbar-toggler-border-color: none;
-    --bs-navbar-toggler-border-radius: 0;
-    --bs-navbar-toggler-focus-width: 0;
-    --bs-navbar-toggler-transition: none;
-    cursor: pointer;
-    border: none; 
+  --bs-navbar-toggler-border-color: none;
+  --bs-navbar-toggler-border-radius: 0;
+  --bs-navbar-toggler-focus-width: 0;
+  --bs-navbar-toggler-transition: none;
+  cursor: pointer;
+  border: none;
 }
 
 .offcanvas-title {
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .nav-link {
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
-
 .nav-link:hover {
-    color: #6F99AF;
-}
-/* FIN HEADER */
-
-/* INDEX */
-/* hero section */
-.hero-section {
-    background: url("../assets/images/taylor_portada.png") no-repeat center center fixed;
-    background-size: cover;
-    height: 920px;
-    width: 100%;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    overflow: auto;
+  color: #6F99AF;
 }
 
-.hero-section-fijo {
-    position: sticky;
-    top: 0;    
-    padding: 20px;
-    text-align: center;
+.footer {
+  position: static;
+  left: 0;
+  margin-bottom: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #12112E;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.footer__container {
+  max-width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+}
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.footer__links {
+  padding: 10px;
+}
+.footer__links a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+.footer__links a:hover {
+  background-color: #6F99AF;
+  color: #fff;
+}
+.footer__creador {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+.footer__text span {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.hero-section-fijo h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:700;
-    font-size: 70px;
-    color: #ffffff;
-    margin: 0;
-    padding-top: 500px;
-    letter-spacing: 3px;
+.hero {
+  background: url("../assets/images/taylor_portada.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 920px;
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: auto;
 }
 
-.hero-section-fijo hr {
-    width: 200%;
-    height: 2px;
-    background-color: #ffffff;
-    margin: 15px auto; 
-    margin-left: -50%;
-    margin-right: -50%;
-    border-top: none;
-    opacity: 100%;
+.hero__section {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  text-align: center;
+}
+.hero__section h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  color: #FFF;
+  margin: 0;
+  padding-top: 500px;
+  letter-spacing: 3px;
+}
+.hero__section hr {
+  width: 200%;
+  height: 2px;
+  background-color: #FFF;
+  margin: 15px auto;
+  margin-left: -50%;
+  margin-right: -50%;
+  border-top: none;
+  opacity: 100%;
+}
+.hero__section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #FFF;
+  margin: 0;
 }
 
-.hero-section-fijo h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 22px;
-    color: #ffffff;
-    margin: 0;
-}
-/* fin hero section */
-
-/* caracteristicas */
 .caracteristicas {
-    grid-area: destacado;
-    background: url("../assets/images/fondo_contenido_dos.png");
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    padding: 40px;
-    margin-top: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: destacado;
+  background: url("../assets/images/fondo_contenido_dos.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.caracteristicas-lista {
-    display: flex;
-    flex-direction: row;
+.caracteristicas__lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.caracteristicas__item {
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.caracteristicas__item dd {
+  margin: 0;
+}
+.caracteristicas__item dt img {
+  padding: 5px;
+  width: 70px;
+  height: 70px;
+}
+.caracteristicas__item h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #12112E;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.caracteristicas__item p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #12112E;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.tour {
+  background: url("../assets/images/fondo_contenido_tres.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 70px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "area1 area1" "c1 c2" "area4 area4";
+}
+.tour__titulo {
+  grid-area: area1;
+}
+.tour__titulo h2 {
+  font-size: 40px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+.tour__titulo hr {
+  border: none;
+  border-top: 2px solid #ffffff;
+  width: 250px;
+  margin-left: 0px;
+  margin-top: 20px;
+  opacity: 100%;
+}
+.tour__columnauno .info {
+  grid-area: c1;
+}
+.tour__columnauno .info__ol {
+  list-style: none;
+  padding: 0;
+}
+.tour__columnauno .info__li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.tour__columnauno .info__fecha, .tour__columnauno .info__estadio, .tour__columnauno .info__ubicacion, .tour__columnauno .info__status {
+  margin: 1px 0;
+}
+.tour__columnauno .info__fecha {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFF;
+}
+.tour__columnauno .info__estadio {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFF;
+  white-space: nowrap;
+}
+.tour__columnauno .info__ubicacion {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF;
+}
+.tour__columnauno .info__status {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #FF0000;
+  margin: 2px 20px;
+}
+.tour__columnados .info {
+  grid-area: c2;
+}
+.tour__columnados .info__ol {
+  list-style: none;
+  padding: 0;
+}
+.tour__columnados .info__li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.tour__columnados .info__fecha, .tour__columnados .info__estadio, .tour__columnados .info__ubicacion, .tour__columnados .info__status {
+  margin: 3px 0;
+}
+.tour__columnados .info__fecha {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFF;
+}
+.tour__columnados .info__estadio {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFF;
+  white-space: nowrap;
+}
+.tour__columnados .info__ubicacion {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF;
+}
+.tour__columnados .info__status {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #FF0000;
+  margin: 2px 20px;
+}
+.tour__informacion {
+  grid-area: area4;
+  display: flex;
+  align-items: center;
+}
+.tour__informacion p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF;
+  text-align: center;
+  padding: 50px;
+  margin: 0px;
+}
+
+@media (max-width: 1099px) {
+  .hero__section hr {
+    width: 750px;
+    height: 2px;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 920px) {
+  .caracteristicas__lista {
+    flex-direction: column;
     justify-content: space-between;
+  }
+  .caracteristicas__item p {
+    font-size: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
 }
-
-.caracteristica {
-    align-items: center;
+@media (max-width: 895px) {
+  .hero__section hr {
+    width: 550px;
+  }
+  .caracteristicas__item {
     text-align: center;
     padding: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .tour {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "area1" "c1" "c2" "area4";
+  }
+  .tour__columnauno {
+    grid-area: c1;
+    justify-self: center;
+  }
+  .tour__columnados {
+    grid-area: c2;
+    justify-self: center;
+  }
 }
-
-.caracteristica dd {
+@media (max-width: 615px) {
+  .hero__section hr {
+    width: 300px;
+  }
+  .tour {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "area1" "c1" "c2" "area4";
+  }
+  .tour__columnauno {
+    grid-area: c1;
+    justify-self: flex-start;
+    margin: 30px 0 0 0;
+  }
+  .tour ol li {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+  }
+  .tour ol {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .tour__columnados {
+    grid-area: c2;
+    justify-self: flex-start;
+    margin-bottom: 30px;
+  }
+  .tour__informacion {
+    justify-content: flex-start;
+  }
+  .tour__informacion p {
+    text-align: left;
+    padding: 0;
+  }
+  .caracteristicas__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 0;
+  }
+  .caracteristicas dl {
+    margin-bottom: 0;
+  }
+  .caracteristicas__item {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .caracteristicas__item dd {
     margin: 0;
-}
-
-.caracteristica dt img {
+  }
+  .caracteristicas__item dt img {
     padding: 5px;
     width: 70px;
     height: 70px;
-}
-
-.caracteristica h3 {
-    font-family: 'Montserrat', sans-serif;
+  }
+  .caracteristicas__item h3 {
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     color: #12112E;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.caracteristica p {
-    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+  }
+  .caracteristicas__item p {
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: #12112E;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0;
+    padding: 0 20px;
+  }
 }
-/* fin caracteristicas */
-
-/* fechas tour */
-.tour-contenido {
-    background: url("../assets/images/fondo_contenido_tres.png");
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    padding: 70px;
-    margin-top: 0px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: 
-        "area1 area1"
-        "c1 c2"
-        "area4 area4";
+.galeria {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url("../assets/images/fondo-galeria.png");
+  background-repeat: repeat;
+  padding: 7px;
 }
-
-.tour-titulo {
-    grid-area: area1;
+.galeria h2 {
+  display: flex;
+  font-size: 40px;
+  color: #12112E;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 10px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-.columna-uno {
-    grid-area: c1;
+.galeria__imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.galeria__imagenes img {
+  width: 650px;
+  height: 500px;
+  object-fit: cover;
+  padding: 7px;
+}
+.galeria__imagenes img:hover {
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
-.columna-dos {
-    grid-area: c2;
+.videos {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url("../assets/images/fondo-galeria.png");
+  padding: 7px;
+}
+.videos h2 {
+  display: flex;
+  font-size: 40px;
+  color: #12112E;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 10px;
+  justify-content: center;
+  margin-top: 30px;
+  text-align: center;
 }
 
-
-.columna-uno ol {
-    margin-bottom: 16px;
-    padding-left: 36px;
+.videos__galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
-
-.columna-dos ol {
-    margin-bottom: 16px;
-    padding-left: 36px;
+.videos__galeria iframe {
+  width: 630px;
+  height: 385px;
+  padding: 7px;
 }
-
-.columna-uno ol li{
-    list-style: none;
-    padding: 0;
-    margin: 40px;
-}
-
-.columna-dos ol li{
-    list-style: none;
-    padding: 0;
-    margin: 40px;
-    top: 100px;
-}
-
-.columna-dos ol {
-    display: block;
-    list-style-type: decimal;
-    margin-inline-start: 36px;
-}
-
-.tour-titulo h2{
-    font-size: 40px;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    letter-spacing: 10px;
-}
-
-.tour-titulo hr {
-    border: none;
-    border-top: 2px solid #ffffff;
-    width: 250px;
-    margin-left: 0px;
-    margin-top: 20px;
-    opacity: 100%;
-}
-
-.fecha, .estadio, .ubicacion, .status {
-    margin: 5px 0px;
-}
-
-.fecha {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-}
-
-.estadio {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    color: white;
-    white-space: nowrap;
-}
-
-.ubicacion {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #B7B7B7;
-}
-
-.status {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: #FF0000;
-    margin: 2px 20px;
-}
-
-.inf-adicional {
-    grid-area: area4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.inf-adicional p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    padding: 50px;
-    margin: 0px;
-}
-/* fin fechas tour */
-
-/* index media queries */
-@media (max-width: 1099px) {
-    .hero-section-fijo hr {
-        width: 750px;
-        height: 2px;
-        margin: 15px auto;
-    }
-}
-
-@media (max-width: 920px) {
-    .caracteristicas-lista {
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .caracteristica p {
-        font-size: 20px;
-        margin-left: 150px;
-        margin-right: 150px;
-    }
-}
-
-@media (max-width: 895px) {
-    .hero-section-fijo hr {
-        width: 550px;
-    }
-
-    .tour-contenido {
-        grid-template-columns: 1fr; /* Cambiamos a una sola columna */
-        grid-template-rows: repeat(3, auto); /* Ajustamos las filas automáticamente */
-        grid-template-areas: 
-            "area1"
-            "c1"
-            "c2"
-            "area4";
-        }
-
-        .columna-uno {
-            grid-area: c1;
-            justify-self: center;
-        }
-
-        .columna-dos {
-            grid-area: c2;
-            justify-self: center;
-        }
-
-        .columna-dos ol {
-            display: block;
-            list-style-type: decimal;
-            margin-inline-start: 36px;
-        }
+.videos__galeria iframe:hover {
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
 @media (max-width: 700px) {
-    .galeria-imagenes img {
-        width: 450px;
-        height: 300px;
-        object-fit: cover;
-        padding: 7px;
-    }
-
-    .galeria-videos iframe {
-        width: 460px;
-        height: 215px;
-        padding: 7px;
-    }
-}
-
-@media (max-width:615px) {
-    .hero-section-fijo hr {
-        width: 400px;
-    }
-
-    .tour-contenido {
-        grid-template-columns: 1fr; 
-        grid-template-rows: repeat(3, auto); 
-        grid-template-areas: 
-            "area1"
-            "c1"
-            "c2"
-            "area4";
-        }
-
-        .columna-uno {
-            grid-area: c1;
-            justify-self: flex-start;
-        }
-
-        .columna-uno ol li {
-            list-style: none;
-            padding: 0;
-            margin-left: 0px;
-        }
-
-        .columna-uno ol {
-            margin-bottom: 0;
-            padding-left: 0;
-        }
-
-        .columna-dos {
-            grid-area: c2;
-            justify-self: flex-start;
-        }
-
-        .columna-dos ol li {
-            list-style: none;
-            padding: 0;
-            margin-left: 0px;
-        }
-
-        .columna-dos ol {
-            margin-top: 0;
-            padding-left: 0;
-        }
-
-        .columna-dos ol {
-            display: block;
-            list-style-type: decimal;
-            margin-inline-start: 0px;
-        }
-
-        .inf-adicional {
-        justify-content: flex-start;
-        }
-        
-        .inf-adicional p {
-            text-align: left;
-            padding: 0px;
-        }
-}
-
-@media (max-width:615px) {
-    .hero-section-fijo hr {
-        width: 300px;
-    }
-
-    .caracteristicas {
-        padding: 0px;
-        margin-top: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }    
-
-    .caracteristica {
-        align-items: center;
-        text-align: left;
-        margin: 20px 0px 10px 40px;
-    }
-
-    .caracteristica h3 {
-        font-size: 25px;
-    }
-
-    .caracteristica p {
-        margin: 0px 45px 0px 0px;
-        font-size: 16px;
-    }
-
-    .caracteristicas-lista dl {
-        margin-bottom: 0px;
-    }
-
-    .tour-contenido {
-        padding-left: 50px;
-    }
-}
-/* fin media queries index */
-/* FIN INDEX */
-
-/* DISCOGRAFÍA */
-/* albumes */
-.albumes-taylor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.album {
-    position: relative;
-    transition: 0.5s ease;
-}
-
-.album img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: 0.5s ease;
-}
-
-/*Enlaces para dirigirse a cada album dentro de la página*/
-.album a {
-    display: block; 
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 0;
-    left: 0;
-    z-index: 1; 
-}
-
-/* fearless */
-.fearless-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(171, 122, 36, 0), rgba(171, 122, 36, 1));
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-}
-
-.fearless-text h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.fearless-text hr {
-    border: none;
-    border: 1px solid #ffffff;
-    width: 50px;
-    margin: 5px 0;
-    opacity: 100%;
-}
-
-.fearless-text h3 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 5px;
-}
-
-.album:hover .fearless-text {
-    opacity: 1;
-}
-
-/* speak now */
-.speaknow-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(81, 22, 81, 0), rgba(81, 22, 81, 1));
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-}
-
-.speaknow-text h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.speaknow-text hr {
-    border: none;
-    border: 1px solid #ffffff;
-    width: 50px;
-    margin: 5px 0;
-    opacity: 100%;
-}
-
-.speaknow-text h3 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 5px;
-}
-
-.album:hover .speaknow-text {
-    opacity: 1;
-}
-
-/* red */
-.red-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(149, 30, 26, 0), rgba(149, 30, 26, 1));
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-}
-
-.red-text h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.red-text hr {
-    border: none;
-    border: 1px solid #ffffff;
-    width: 50px;
-    margin: 5px 0;
-    opacity: 100%;
-}
-
-.red-text h3 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 5px;
-}
-
-.album:hover .red-text {
-    opacity: 1;
-}
-
-/* reputation */
-.reputation-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-}
-
-.reputation-text h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.reputation-text hr {
-    border: none;
-    border: 1px solid #ffffff;
-    width: 50px;
-    margin: 5px 0;
-    opacity: 100%;
-}
-
-.reputation-text h3 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 5px;
-}
-
-.album:hover .reputation-text {
-    opacity: 1;
-}
-/* fin albumes */
-
-/* Spotify */
-.spotify-fearless,
-.spotify-speaknow,
-.spotify-red,
-.spotify-reputation {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.spotify-fearless,
-.spotify-speaknow,
-.spotify-red,
-.spotify-reputation {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 800px;
-}
-
-/* fearless */
-.spotify-fearless {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.spotify-fearless iframe {
+  .galeria__imagenes img {
     width: 450px;
-    height: 500px;
-    border-radius: 12px;
-}
-
-.spotify-fearless {
-    background-image: url("../assets/images/fearless_background.png");
-    height: 800px;
-}
-
-/* speak now */
-.spotify-speaknow {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.spotify-speaknow iframe {
-    width: 450px;
-    height: 500px;
-    border-radius: 12px;
-}
-
-.spotify-speaknow {
-    background-image: url("../assets/images/speaknow_background.png");
-    height: 800px;
-}
-
-/* red */
-.spotify-red {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.spotify-red iframe {
-    width: 450px;
-    height: 500px;
-    border-radius: 12px;
-}
-
-.spotify-red {
-    background-image: url("../assets/images/red_background.png");
-    height: 800px;
-}
-
-/* reputation */
-.spotify-reputation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.spotify-reputation iframe {
-    width: 450px;
-    height: 500px;
-    border-radius: 12px;
-}
-
-.spotify-reputation {
-    background-image: url("../assets/images/reputation_background.png");
-    height: 800px;
-}
-/* fin spotify */
-
-/* discografia media queries */
-@media (max-width: 920px) {
-    .albumes-taylor {
-        flex-wrap: wrap;
-    }
-
-    .albumes-taylor img{
-        height: 700px;
-        object-fit: cover;
-    }
-
-    .album {
-        width: 100%;
-    }
-
-    .spotify-fearless,
-    .spotify-speaknow,
-    .spotify-red,
-    .spotify-reputation {
-        height: 600px; 
-    }
-
-.spotify-fearless iframe,
-.spotify-speaknow iframe,
-.spotify-red iframe,
-.spotify-reputation iframe {
-    width: 400px;
-    height: 450px;
-    border-radius: 12px;
-}
-
-    .fearless-text h2 {
-        font-size:40px;
-    }
-
-    .fearless-text h3 {
-        font-size: 22px;
-    }
-
-    .speaknow-text h2 {
-        font-size:40px;
-    }
-
-    .speaknow-text h3 {
-        font-size: 22px;
-    }
-
-    .red-text h2 {
-        font-size:40px;
-    }
-
-    .red-text h3 {
-        font-size: 22px;
-    }
-
-    .reputation-text h2 {
-        font-size:40px;
-    }
-
-    .reputation-text h3 {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 550px) {
-.spotify-fearless iframe,
-.spotify-speaknow iframe,
-.spotify-red iframe,
-.spotify-reputation iframe {
-    width: 295px;
-    height: 400px;
-    border-radius: 12px;
-}
-}
-/* fin media queries discografia */
-/* FIN DISCOGRAFÍA */
-
-/* GALERIA */
-/* galeria de imagenes */
-.galeria-imagenes {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-image: url("../assets/images/fondo-galeria.png");
-    background-repeat: repeat;
-    padding: 7px;
-}
-
-.galeria-imagenes h2{
-    display: flex;
-    font-size: 40px;
-    color: #12112E;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    letter-spacing: 10px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.galeria-imagenes img {
-    width: 650px;
-    height: 500px;
+    height: 300px;
     object-fit: cover;
     padding: 7px;
-}
-
-.galeria-imagenes img:hover {
-    opacity: 0.5;
-    transition: 0.5s;
-}
-/* fin galeria de imagenes */
-
-/* Videos */
-.galeria-videos {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-image: url("../assets/images/fondo-galeria.png");
+  }
+  .videos__galeria iframe {
+    width: 460px;
+    height: 215px;
     padding: 7px;
+  }
 }
-
-.galeria-videos h2{
-    display: flex;
-    font-size: 40px;
-    color: #12112E;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    letter-spacing: 10px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.galeria-videos iframe {
-    width: 630px;
-    height: 385px;
-    padding: 7px;
-}
-
-.galeria-videos iframe:hover {
-    opacity: 0.5;
-    transition: 0.5s;
-}
-/* fin videos */
-
-
-@media (max-width: 700px) {
-    .galeria-imagenes img {
-        width: 450px;
-        height: 300px;
-        object-fit: cover;
-        padding: 7px;
-    }
-
-    .galeria-videos iframe {
-        width: 460px;
-        height: 215px;
-        padding: 7px;
-    }
-}
-
 @media (max-width: 550px) {
-    .galeria-imagenes img {
-        width: 350px;
-        height: 200px;
-        object-fit: cover;
-        padding: 7px;
-    }
-}
-/* media queries galeria de imagenes */
-/* FIN DISCOGRAFÍA */
-
-/* TS FACTS */
-/* Carousel */
-.carousel {
-    margin-top: 50px;
+  .galeria__imagenes img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    padding: 7px;
+  }
+  .videos__galeria iframe {
+    width: 350px;
+    height: 200px;
+    padding: 7px;
+  }
 }
 
-/* media queries para carousel */
-@media (max-width: 600px) {
-    .carousel-item h5 {
-        font-size: 18px;
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-    }
-}
-
-@media (max-width: 450px) {
-    .carousel-item h5 {
-        font-size: 15px;
-    }
-
-    .carousel-item p {
-        font-weight: 300;
-        font-size: 13px;
-    }
-}
-/* fin Carousel y media queries para carousel */
-
-/* Cards */
-.taylor-cards {
-    background-color: #08081c;
-    height: 100%;
-    display: grid;
-    place-items: center center;
-    font-family: 'Montserrat', sans-serif;
-    padding: 50px 0 50px 0;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    padding: 20px;
-    grid-gap: 40px;
-}
-
-.card {
-    background-color: #12112E;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
-}
-
-.card-container {
-    position: relative;
-    clip-path: polygon(0 0,100% 0,100% 85%, 0 100%);
-}
-
-.card-container img {
-    width: 100%;
-    display: block;
-    border-radius: 20px 20px 0 0;
-}
-
-.card-container:after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 20px 20px 0 0;
-    opacity: 0.7;
-    transition: 0.5s ease;
-}
-
-.card-container.gradient:hover::after {
-    background-image: linear-gradient(135deg, #12112E, #ff9900);
-}
-
-.card-container.gradientdos:hover::after {
-    background-image: linear-gradient(135deg, #12112E, #0100ec);
-}
-
-.card-container.gradienttres:hover::after {
-    background-image: linear-gradient(135deg, #12112E, #fb36f4);
-}
-
-.detalles {
-    padding: 20px 10px;
-}
-
-.detalles h3 {
-    color: #fff;
-    font-weight: 700;
-    font-size: 18px;
-    margin: 10px 0 15px 15px;
-}
-
-.detalles p {
-    color: #B7B7B7;
-    font-size: 15px;
-    line-height: 30px;
-    font-weight: 400;
-    margin-left: 15px;
-}
-/* fin cards */
-
-/* media queries para cards */
-@media (max-width: 450px) {
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-}
-
-@media (max-width: 450px) {
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-/* fin media queries para cards */
-
-/* Seccion para datos */
-.ts-facts {
-    background: url("../assets/images/taylor-datos.png");
-    background-size: cover;
-    padding: 60px;;
-}
-
-.container-rectangulo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 100px 0 100px 0;
-}
-
-.rectangulo {
-    width: 200px;
-    height: 150px;
-    border: 2px solid #fff;
-    margin: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.rectangulo h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:700;
-    font-size: 35px;
-    color: #6F99AF;
-    margin: 0;
-}
-
-.rectangulo P {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:400;
-    font-size: 15px;
-    color: #FFF;
-    text-align: center;
-    margin: 0;
-}
-/* fin Seccion para datos */
-/* Fin TS FACTS */
-
-/* CONTACTO */
-/* formulario de contacto */
-.contacto {
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: url(../assets/images/contacto-background.png);
-    background-size: cover;
-}
-
-.contacto .contenido {
-    max-width: 800px;
-    margin-bottom: 30px;
-    margin-top: 40px;
-}
-
-.contacto .contenido h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-}
-
-.contacto .contenido p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-}
-
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .contactInfo {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.container .contactInfo .box {
-    position: relative;
-    padding: 20px 0;
-    display: flex;
-}
-
-.container .contactInfo .box .icon {
-    min-width: 60px;
-    height: 60px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
-}
-
-.container .contactInfo .box .text {
-    display: flex;
-    margin-left: 20px;
-    font-size: 16px;
-    color: #fff;
-    flex-direction: column;
-    font-weight: 300;
-}
-
-.container .contactInfo .box .text h3 {
-    font-weight: 500;
-    color: #6F99AF;
-}
-
-.contactForm {
-    width: 40%;
-    padding: 40px;
-    background-color: #fff;
-}
-
-.contactForm h2 {
-    font-size: 30px;
-    color: #6F99AF;
-    font-weight: 700;
-}
-
-.contactForm .inputBox {
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #12112E;
-    outline: none;
-    resize: none;
-}
-
-.contactForm .inputBox span {
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #494949;
-}
-
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
-    color: #e91e63;
-    font-size: 12px;
-    transform: translateY(-20px);
-}
-
-.contactForm .inputBox input[type="submit"] {
-    width: 100px;
-    background: #6F99AF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.contactForm .inputBox input[type="submit"]:hover {
-    background-color: #12112E;
-}
-/* fin formulario de contacto */
-
-/* mapa */
-.mapa {
-    margin-top: 50px;
-    width: 50vh;
-    height: 40vh; 
-}
-
-.mapa iframe {
-    width: 100%; 
-    height: 100%; 
-    border: 0;
-}
-
-/* formulario de contacto media queries */
-@media (max-width: 991px) {
-    .contact {
-        padding: 50px;
-    }
-    
-    .container {
-        flex-direction: column;
-    }
-
-    .container .contactInfo {
-        margin-bottom: 40px;
-    }
-
-    .container .contactInfo,
-    .contactForm {
-        width: 100%;
-    }
-}
-/* fin formulario de contacto media queries */
-
-/* mapa media queries */
-@media (max-width: 630px) {
-    .mapa {
-        margin-top: 50px;
-        width: 30vh;
-        height: 20vh; 
-    }
-}
-/* FIN CONTACTO */
-
-/* FOOTER */
-.footer {
-    position:static;
-    left: 0;
-    margin-bottom: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:#12112E;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.container-footer {
-    max-width: 100%;
-    margin: 0 auto;
-    bottom: 0;
-}
-
-.footer-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.social-link {
-    padding: 10px;
-}
-
-.social-link a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    margin-right: 10px;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-    color: #000;
-    transition: background-color 0.3s ease;
-}
-
-.social-link a:hover {
-    background-color: #6F99AF;
-    color: #fff;
-}
-
-.footer-creador {
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    margin: 0;
-}
-
-.footer-text span {
-    margin-left: 5px;
-    margin-right: 5px;
-    font-weight: bold;
-}
-/* FIN FOOTER */
-
-
+/*# sourceMappingURL=style.css.map */
