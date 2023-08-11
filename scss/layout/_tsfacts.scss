@@ -1,0 +1,173 @@
+//carousel
+.custom-image {
+    margin-top: 52px;
+}
+
+//cards
+.taylor-cards {
+	background-color: #08081c;
+	height: 100%;
+	display: grid;
+	place-items: center center;
+	font-family: 'Montserrat', sans-serif;
+	padding: 50px 0 50px 0;
+}
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	padding: 20px;
+	grid-gap: 40px;
+}
+.card {
+	background-color: $primary-color;
+	border-radius: 20px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+.card-container {
+	position: relative;
+	clip-path: polygon(0 0,100% 0,100% 85%, 0 100%);
+	img {
+		width: 100%;
+		display: block;
+		border-radius: 20px 20px 0 0;
+	}
+	&:after {
+		content: "";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 20px 20px 0 0;
+		opacity: 0.7;
+		transition: 0.5s ease;
+	}
+	&.gradient {
+		&:hover {
+			&::after {
+				background-image: linear-gradient(135deg, #12112E, #ff9900);
+			}
+		}
+	}
+	&.gradientdos {
+		&:hover {
+			&::after {
+				background-image: linear-gradient(135deg, #12112E, #0100ec);
+			}
+		}
+	}
+	&.gradienttres {
+		&:hover {
+			&::after {
+				background-image: linear-gradient(135deg, #12112E, #fb36f4);
+			}
+		}
+	}
+}
+.cards__detalles {
+	padding: 20px 10px;
+	h3 {
+		color: $text-color;
+		font-weight: 700;
+		font-size: 18px;
+		margin: 10px 0 15px 15px;
+	}
+	p {
+		color: #B7B7B7;
+		font-size: 15px;
+		line-height: 30px;
+		font-weight: 400;
+		margin-left: 15px;
+	}
+}
+
+//seccion para datos
+.facts {
+    background: url("../assets/images/taylor-datos.png");
+    background-size: cover;
+    padding: 60px;
+}
+
+.facts__titulo {
+    h2 {
+        font-family: $font-family;
+        font-size:35px;
+        font-weight: 500;
+        color: $text-color;
+    }
+
+    hr {
+        width: 300px;
+		height: 2px;
+		background-color: $text-color;
+        margin-top: 20px;
+		border-top: none;
+		opacity: 100%;
+    }
+}
+
+.container-rectangulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+}
+
+.rectangulo {
+    width: 200px;
+    height: 150px;
+    border: 2px solid #fff;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight:700;
+        font-size: 35px;
+        color: #6F99AF;
+        margin: 0;
+    }
+
+    P {
+        font-family: 'Montserrat', sans-serif;
+        font-weight:400;
+        font-size: 15px;
+        color: #FFF;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+//MEDIA QUERIES
+@media (max-width: 450px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 450px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+// CAROUSEL MEDIA QUERIES 
+@media (max-width: 600px) {
+    .carousel-item h5 {
+        font-size: 16px;
+        color: $text-color;
+        font-family: $font-family;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 550px) {
+    .carousel-caption {
+        display: none;
+    }
+}

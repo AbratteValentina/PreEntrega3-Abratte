@@ -65,6 +65,7 @@
 }
 
 .offcanvas-title {
+  margin-left: 12px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -72,6 +73,7 @@
 }
 
 .nav-link {
+  margin-left: 12px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -577,6 +579,158 @@
     width: 350px;
     height: 200px;
     padding: 7px;
+  }
+}
+.custom-image {
+  margin-top: 52px;
+}
+
+.taylor-cards {
+  background-color: #08081c;
+  height: 100%;
+  display: grid;
+  place-items: center center;
+  font-family: "Montserrat", sans-serif;
+  padding: 50px 0 50px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 20px;
+  grid-gap: 40px;
+}
+
+.card {
+  background-color: #12112E;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.card-container {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.card-container img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.card-container:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+  transition: 0.5s ease;
+}
+.card-container.gradient:hover::after {
+  background-image: linear-gradient(135deg, #12112E, #ff9900);
+}
+.card-container.gradientdos:hover::after {
+  background-image: linear-gradient(135deg, #12112E, #0100ec);
+}
+.card-container.gradienttres:hover::after {
+  background-image: linear-gradient(135deg, #12112E, #fb36f4);
+}
+
+.cards__detalles {
+  padding: 20px 10px;
+}
+.cards__detalles h3 {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 10px 0 15px 15px;
+}
+.cards__detalles p {
+  color: #B7B7B7;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.facts {
+  background: url("../assets/images/taylor-datos.png");
+  background-size: cover;
+  padding: 60px;
+}
+
+.facts__titulo h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  color: #FFF;
+}
+.facts__titulo hr {
+  width: 300px;
+  height: 2px;
+  background-color: #FFF;
+  margin-top: 20px;
+  border-top: none;
+  opacity: 100%;
+}
+
+.container-rectangulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px 0 100px 0;
+}
+
+.rectangulo {
+  width: 200px;
+  height: 150px;
+  border: 2px solid #fff;
+  margin: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rectangulo h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: #6F99AF;
+  margin: 0;
+}
+.rectangulo P {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFF;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 450px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 450px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .carousel-item h5 {
+    font-size: 16px;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+}
+@media (max-width: 550px) {
+  .carousel-caption {
+    display: none;
   }
 }
 
