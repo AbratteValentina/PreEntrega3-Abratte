@@ -1,0 +1,99 @@
+//datos discografia
+
+@media (max-width: 1620px){
+.discografia__taylor {
+    position: absolute;
+    width:700px;
+    z-index: 1;
+    }
+}
+
+@media (max-width: 1280px){
+    .discografia__taylor {
+        position: absolute;
+        width:500px;
+        z-index: 1;
+        }
+    }
+
+@media (max-width: 767px){
+        .discografia__taylor {
+            position: absolute;
+            width:500px;
+            z-index: -1;
+            }
+        }
+
+@media (max-width: 835px) {
+    .discografia__content .datos{    
+
+        &__ol  {
+            list-style: none;
+            padding: 0; 
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            gap: 25px;
+            }
+        }
+    }
+
+//eras taylor
+@media (max-width: 920px) {
+.eras {
+    display: flex;
+    width: 100%;
+    height:800px;
+    background-color: $primary-color;
+
+    img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: 0.5s ease;
+
+        &:hover {
+            cursor: crosshair; 
+            width: 200px;
+            opacity: 1;
+            filter: contrast(120%);
+            }
+        }
+    }
+}
+
+//albumes
+@media (max-width: 550px) {
+    .fearless-text h2 {
+        font-size:30px;
+    }
+
+    .fearless-text h3 {
+        font-size: 16px;
+    }
+
+    .speaknow-text h2 {
+        font-size:30px;
+    }
+
+    .speaknow-text h3 {
+        font-size: 16px;
+    }
+
+    .red-text h2 {
+        font-size:30px;
+    }
+
+    .red-text h3 {
+        font-size: 16px;
+    }
+
+    .reputation-text h2 {
+        font-size:30px;
+    }
+
+    .reputation-text h3 {
+        font-size: 16px;
+    }
+}

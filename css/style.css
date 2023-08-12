@@ -375,7 +375,7 @@
   background-size: cover;
   overflow: hidden;
   position: relative;
-  margin-top: 55px;
+  margin-top: 52px;
 }
 
 .discografia__taylor {
@@ -447,12 +447,13 @@
 }
 
 .discografia__spotify {
-  width: 10%;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin: 50px 0 0 80px;
+  margin: 50px 0px 0px 80px;
+  margin-left: 130px;
 }
 .discografia__spotify button {
   font-weight: 400;
@@ -492,6 +493,248 @@
   width: 300px;
   opacity: 1;
   filter: contrast(120%);
+}
+
+.albumes-taylor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #080818;
+  padding: 50px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.album {
+  position: relative;
+  margin: 25px;
+  width: 500px;
+}
+.album img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+.album:hover .fearless-text {
+  opacity: 1;
+}
+.album:hover .speaknow-text {
+  opacity: 1;
+}
+.album:hover .red-text {
+  opacity: 1;
+}
+.album:hover .reputation-text {
+  opacity: 1;
+}
+
+.fearless-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(171, 122, 36, 0), rgb(171, 122, 36));
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.fearless-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.fearless-text hr {
+  border: none;
+  border: 1px solid #ffffff;
+  width: 50px;
+  margin: 5px 0;
+  opacity: 100%;
+}
+.fearless-text h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.speaknow-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(81, 22, 81, 0), rgb(81, 22, 81));
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.speaknow-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.speaknow-text hr {
+  border: none;
+  border: 1px solid #ffffff;
+  width: 50px;
+  margin: 5px 0;
+  opacity: 100%;
+}
+.speaknow-text h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.red-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(149, 30, 26, 0), rgb(149, 30, 26));
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.red-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.red-text hr {
+  border: none;
+  border: 1px solid #ffffff;
+  width: 50px;
+  margin: 5px 0;
+  opacity: 100%;
+}
+.red-text h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.reputation-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.reputation-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.reputation-text hr {
+  border: none;
+  border: 1px solid #ffffff;
+  width: 50px;
+  margin: 5px 0;
+  opacity: 100%;
+}
+.reputation-text h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.disco {
+  background-color: #080818;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.disco__taylor {
+  margin: 50px 50px 50px 50px;
+}
+.disco ol {
+  list-style: none;
+  padding: 0;
+}
+.disco__li {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.disco__li.fearless {
+  background: url("../assets/images/disco-fearless.png");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.disco__title, .disco__description, .disco__year {
+  margin: 20px 0px 20px 20px;
+}
+.disco__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFF;
+}
+.disco__description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFF;
+}
+.disco__year {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF;
+}
+.disco__spotify {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.disco__spotify iframe {
+  border-radius: 12px;
+  width: 400px;
+  height: 450px;
+  margin-bottom: 20px;
 }
 
 .galeria {
@@ -952,6 +1195,84 @@
     color: #12112E;
     margin: 0;
     padding: 0 20px;
+  }
+}
+@media (max-width: 1620px) {
+  .discografia__taylor {
+    position: absolute;
+    width: 700px;
+    z-index: 1;
+  }
+}
+@media (max-width: 1280px) {
+  .discografia__taylor {
+    position: absolute;
+    width: 500px;
+    z-index: 1;
+  }
+}
+@media (max-width: 767px) {
+  .discografia__taylor {
+    position: absolute;
+    width: 500px;
+    z-index: -1;
+  }
+}
+@media (max-width: 835px) {
+  .discografia__content .datos__ol {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 25px;
+  }
+}
+@media (max-width: 920px) {
+  .eras {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-color: #12112E;
+  }
+  .eras img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  .eras img:hover {
+    cursor: crosshair;
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+}
+@media (max-width: 550px) {
+  .fearless-text h2 {
+    font-size: 30px;
+  }
+  .fearless-text h3 {
+    font-size: 16px;
+  }
+  .speaknow-text h2 {
+    font-size: 30px;
+  }
+  .speaknow-text h3 {
+    font-size: 16px;
+  }
+  .red-text h2 {
+    font-size: 30px;
+  }
+  .red-text h3 {
+    font-size: 16px;
+  }
+  .reputation-text h2 {
+    font-size: 30px;
+  }
+  .reputation-text h3 {
+    font-size: 16px;
   }
 }
 @media (max-width: 700px) {
