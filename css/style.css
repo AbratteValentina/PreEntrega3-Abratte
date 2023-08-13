@@ -805,8 +805,8 @@
   background-image: url("../assets/images/fondo-galeria.png");
   padding: 7px;
 }
-.videos h2 {
-  display: flex;
+.videos__texto {
+  position: relative;
   font-size: 40px;
   color: #12112E;
   font-family: "Montserrat", sans-serif;
@@ -816,7 +816,27 @@
   margin-top: 30px;
   text-align: center;
 }
+.videos__texto::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #6F99AF;
+  border-right: #6F99AF;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
 
+@keyframes animate {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}
 .videos__galeria {
   display: flex;
   justify-content: center;
