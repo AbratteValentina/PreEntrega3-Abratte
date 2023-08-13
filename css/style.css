@@ -703,6 +703,30 @@
   width: 100%;
   display: flex;
   align-items: flex-start;
+  margin-bottom: 30px;
+}
+.disco__li.speaknow {
+  background: url("../assets/images/disco-speaknow.png");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.disco__li.red {
+  background: url("../assets/images/disco-red.png");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.disco__li.reputation {
+  background: url("../assets/images/disco-reputation.png");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
 }
 .disco__title, .disco__description, .disco__year {
   margin: 20px 0px 20px 20px;
@@ -1211,21 +1235,35 @@
     z-index: 1;
   }
 }
-@media (max-width: 767px) {
-  .discografia__taylor {
-    position: absolute;
-    width: 500px;
-    z-index: -1;
-  }
-}
 @media (max-width: 835px) {
+  .discografia__titulo {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  .discografia__titulo h1 {
+    font-size: 50px;
+    padding: 40px;
+  }
+  .discografia__spotify {
+    margin-left: 110px;
+  }
   .discografia__content .datos__ol {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 10px;
     gap: 25px;
+  }
+  .discografia__content .datos__li {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .discografia__taylor {
+    position: absolute;
+    width: 500px;
+    z-index: -1;
   }
 }
 @media (max-width: 920px) {
@@ -1275,6 +1313,20 @@
     font-size: 16px;
   }
 }
+.disco__title, .disco__description, .disco__year {
+  margin: 20px 0px 20px 5px;
+}
+.disco__title {
+  font-size: 30px;
+}
+.disco__spotify {
+  margin-left: 5px;
+}
+.disco__spotify iframe {
+  width: 300px;
+  height: 400px;
+}
+
 @media (max-width: 700px) {
   .galeria__imagenes img {
     width: 450px;
@@ -1299,6 +1351,19 @@
     width: 350px;
     height: 200px;
     padding: 7px;
+  }
+}
+@media (max-width: 1920px) {
+  .carousel-item img {
+    height: 800px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1000px) {
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 @media (max-width: 450px) {
