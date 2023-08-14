@@ -67,14 +67,11 @@
 .cards__detalles {
 	padding: 20px 10px;
 	h3 {
-		color: $text-color;
-		font-weight: 700;
-		font-size: 18px;
+		@include fuente-personalizada(700, 18px, $text-color);
 		margin: 10px 0 15px 15px;
 	}
 	p {
-		color: #B7B7B7;
-		font-size: 15px;
+		@include fuente-personalizada(400, 16px, #B7B7B7);
 		line-height: 30px;
 		font-weight: 400;
 		margin-left: 15px;
@@ -90,26 +87,21 @@
 
 .facts__titulo {
     h2 {
-        font-family: $font-family;
-        font-size:35px;
-        font-weight: 500;
-        color: $text-color;
+        @include fuente-personalizada(500, 35px, $text-color);
     }
 
     hr {
         width: 300px;
-		height: 2px;
-		background-color: $text-color;
+        height: 2px;
+        background-color: $text-color;
         margin-top: 20px;
-		border-top: none;
-		opacity: 100%;
+        border-top: none;
+        opacity: 1;
     }
 }
 
 .container-rectangulo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex-wrap;
     margin: 100px 0 100px 0;
 }
 
@@ -126,19 +118,12 @@
     align-items: center;
 
     h4 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight:700;
-        font-size: 35px;
-        color: #6F99AF;
+        @include fuente-personalizada(700, 35px, #6F99AF);
         margin: 0;
     }
 
     P {
-        font-family: 'Montserrat', sans-serif;
-        font-weight:400;
-        font-size: 15px;
-        color: #FFF;
-        text-align: center;
+        @include fuente-personalizada(400, 15px, #FFF);
         margin: 0;
     }
 }

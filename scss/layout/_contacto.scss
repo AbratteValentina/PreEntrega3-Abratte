@@ -14,18 +14,12 @@
 		margin-bottom: 30px;
 		margin-top: 40px;
 		h2 {
-			font-family: 'Montserrat', sans-serif;
-			font-size: 35px;
-			font-weight: 700;
-			color: #fff;
-			text-align: center;
+			@include fuente-personalizada(700, 35px, #fff);
+            text-align: center;
 		}
 		p {
-			font-family: 'Montserrat', sans-serif;
-			font-size: 18px;
-			font-weight: 400;
-			color: #fff;
-			text-align: center;
+			@include fuente-personalizada(400, 18px, #fff);
+            text-align: center;
 		}
 	}
 }

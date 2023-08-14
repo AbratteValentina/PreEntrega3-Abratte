@@ -21,7 +21,7 @@
             margin-top: 50px;
             margin-left: 10px;
             h1 {
-                font-size: 50px;    
+                font-size: 60px;    
                 padding: 40px;
             }
         }
@@ -82,36 +82,20 @@
 
 //albumes
 @media (max-width: 550px) {
-    .fearless-text h2 {
-        font-size:30px;
-    }
+    .album {
+        .fearless-text h2,
+        .speaknow-text h2,
+        .red-text h2,
+        .reputation-text h2 {
+            font-size: 35px;
+        }
 
-    .fearless-text h3 {
-        font-size: 16px;
-    }
-
-    .speaknow-text h2 {
-        font-size:30px;
-    }
-
-    .speaknow-text h3 {
-        font-size: 16px;
-    }
-
-    .red-text h2 {
-        font-size:30px;
-    }
-
-    .red-text h3 {
-        font-size: 16px;
-    }
-
-    .reputation-text h2 {
-        font-size:30px;
-    }
-
-    .reputation-text h3 {
-        font-size: 16px;
+        .fearless-text h3,
+        .speaknow-text h3,
+        .red-text h3,
+        .reputation-text h3 {
+            font-size: 16px;
+        }
     }
 }
 

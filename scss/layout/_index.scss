@@ -15,10 +15,10 @@
 	padding: 20px;
 	text-align: center;
 	h1 {
-		font-family: 'Montserrat', sans-serif;
-		font-weight: 700;
-		font-size: 70px;
-		color: $text-color;
+        @include fuente-personalizada(700, 70px, $text-color);
+        margin: 0;
+        padding-top: 500px;
+        letter-spacing: 3px;
 		margin: 0;
 		padding-top: 500px;
 		letter-spacing: 3px;
@@ -34,12 +34,10 @@
 		opacity: 100%;
 	}
 	h2 {
-		font-family: 'Montserrat', sans-serif;
-		font-weight: 500;
-		font-size: 22px;
-		color: $text-color;
-		margin: 0;
-	}
+        @include fuente-personalizada(500, 20px, $text-color);
+        font-weight: 500;
+        margin: 0;
+    }
 }
 
 //caracteristicas
