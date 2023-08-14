@@ -216,10 +216,17 @@
 .caracteristicas__item dd {
   margin: 0;
 }
+.caracteristicas__item dt {
+  position: relative;
+}
 .caracteristicas__item dt img {
   padding: 5px;
   width: 70px;
   height: 70px;
+  transition: transform 0.3s;
+}
+.caracteristicas__item dt:hover img {
+  transform: scale(1.2);
 }
 .caracteristicas__item h3 {
   font-family: "Montserrat", sans-serif;
