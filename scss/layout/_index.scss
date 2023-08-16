@@ -66,19 +66,7 @@
 	dd {
 		margin: 0;
 	}
-    dt {
-        position: relative; 
-        img {
-            padding: 5px;
-            width: 70px;
-            height: 70px;
-            transition: transform 0.3s;
-        }
-
-        &:hover img {
-            transform: scale(1.2);
-        }
-    }
+}
 
 	h3 {
         @include fuente-personalizada(700, 30px, $primary-color);
@@ -89,7 +77,6 @@
         @include fuente-personalizada(400, 20px, $alternative-textcolor);
         margin: 5px 50px 5px 50px;
     }
-}
 
 //Tour
 .tour {
