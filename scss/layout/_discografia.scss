@@ -2,7 +2,7 @@
 .discografia {
     width: 100%;
     min-height: 100vh;
-    background-image: url(../assets/images/fondotaylorsilueta.png);
+    background-image: url("../assets/images/fondotaylorsilueta.webp");
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -265,25 +265,25 @@
             
             &.fearless {
                 @extend .discos-base;
-                background: url("../assets/images/disco-fearless.png");
+                background: url("../assets/images/disco-fearless.webp");
                 margin-bottom: 30px;
             }
             
             &.speaknow {
                 @extend .discos-base;
-                background: url("../assets/images/disco-speaknow.png");
+                background: url("../assets/images/disco-speaknow.webp");
                 margin-bottom: 30px;
             }
             
             &.red {
                 @extend .discos-base;
-                background: url("../assets/images/disco-red.png");
+                background: url("../assets/images/disco-red.webp");
                 margin-bottom: 30px;
             }
             
             &.reputation {
                 @extend .discos-base;
-                background: url("../assets/images/disco-reputation.png");
+                background: url("../assets/images/disco-reputation.webp");
                 margin-bottom: 30px;
             }
 		}
