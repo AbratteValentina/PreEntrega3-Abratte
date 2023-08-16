@@ -13,7 +13,7 @@
 		max-width: 800px;
 		margin-bottom: 30px;
 		margin-top: 40px;
-		h2 {
+		h1 {
 			@include fuente-personalizada(700, 35px, #fff);
             text-align: center;
 		}
@@ -55,22 +55,23 @@
 				color: $text-color;
 				flex-direction: column;
 				font-weight: 300;
-				h3 {
-					font-weight: 500;
-					color: $accent-color;
+				h2 {
+					@include fuente-personalizada(600, 24px, $accent-color);
+				    }
+				p {
+				@include fuente-personalizada(400, 16px, $text-color);
+				}
 				}
 			}
 		}
 	}
-}
+
 .contacto__form {
 	width: 40%;
 	padding: 40px;
 	background-color: #fff;
 	h2 {
-		font-size: 30px;
-		color: $accent-color;
-		font-weight: 700;
+		@include fuente-personalizada(700, 30px, $accent-color);
 	}
 	.input__box {
 		position: relative;

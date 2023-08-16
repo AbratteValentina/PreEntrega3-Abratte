@@ -256,40 +256,36 @@
 			flex-direction: column;
 			padding: 30px;
 
-			&.fearless {
-				background: url("../assets/images/disco-fearless.png");
-				background-size: cover;
-				width: 100%;
-				display: flex;
-				align-items: flex-start;
-				margin-bottom: 30px;
-			}
-
-			&.speaknow {
-				background: url("../assets/images/disco-speaknow.png");
-				background-size: cover;
-				width: 100%;
-				display: flex;
-				align-items: flex-start;
-				margin-bottom: 30px;
-			}
-
-			&.red {
-				background: url("../assets/images/disco-red.png");
-				background-size: cover;
-				width: 100%;
-				display: flex;
-				align-items: flex-start;
-				margin-bottom: 30px;
-			}
-
-			&.reputation {
-				background: url("../assets/images/disco-reputation.png");
-				background-size: cover;
-				width: 100%;
-				display: flex;
-				align-items: flex-start;
-			}
+			.discos-base {
+                background-size: cover;
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+            }
+            
+            &.fearless {
+                @extend .discos-base;
+                background: url("../assets/images/disco-fearless.png");
+                margin-bottom: 30px;
+            }
+            
+            &.speaknow {
+                @extend .discos-base;
+                background: url("../assets/images/disco-speaknow.png");
+                margin-bottom: 30px;
+            }
+            
+            &.red {
+                @extend .discos-base;
+                background: url("../assets/images/disco-red.png");
+                margin-bottom: 30px;
+            }
+            
+            &.reputation {
+                @extend .discos-base;
+                background: url("../assets/images/disco-reputation.png");
+                margin-bottom: 30px;
+            }
 		}
 			
 			&__title,
@@ -299,24 +295,15 @@
 			}
 
 			&__title {
-				font-family: $font-family;
-				font-size: 40px;
-				font-weight: 700;
-				color: $text-color;
+                @include fuente-personalizada(700, 40px, $text-color);
 			}
 
 			&__description {
-				font-family: $font-family;
-				font-size: 18px;
-				font-weight: 400;
-				color: $text-color;
+                @include fuente-personalizada(400, 18px, $text-color);
 			}
 
 			&__year {
-					font-family: $font-family;
-					font-size: 16px;
-					font-weight: 400;
-					color: $text-color;
+                @include fuente-personalizada(400, 16px, $text-color);
 			}
 
 			&__spotify {

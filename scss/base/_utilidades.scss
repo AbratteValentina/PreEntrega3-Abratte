@@ -1,0 +1,58 @@
+@mixin flex-center($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin fuente-personalizada($peso, $tamano, $color) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $peso;
+    font-size: $tamano;
+    color: $color;
+}
+
+@mixin columna-tourpropiedades($fecha-size, $estadio-size, $ubicacion-size, $status-size, $status-color) {
+    &__ol {
+        list-style: none;
+        padding: 0;
+        @include flex-center(column);
+    }
+
+    &__li {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    &__fecha,
+    &__estadio,
+    &__ubicacion,
+    &__status {
+        margin: 1px 0;
+    }
+
+    &__fecha {
+        @include fuente-personalizada(500, $fecha-size, #fff);
+    }
+
+    &__estadio {
+        @include fuente-personalizada(500, $estadio-size, #fff);
+        white-space: nowrap;
+    }
+
+    &__ubicacion {
+        @include fuente-personalizada(500, $ubicacion-size, #fff);
+    }
+
+    &__status {
+        @include fuente-personalizada(500, $status-size, $status-color);
+        margin: 2px 20px;
+    }
+}

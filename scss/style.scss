@@ -1,6 +1,7 @@
 // base
-@import "base/variables";
 @import "base/reset";
+@import "base/variables";
+@import "base/utilidades";
 
 //components
 @import "components/navbar";
@@ -12,5 +13,5 @@
 @import "layout/galeria";
 @import "layout/tsfacts";
 @import "layout/contacto";
-@import "layout/mediaqueries"
+@import "layout/mediaqueries";
 

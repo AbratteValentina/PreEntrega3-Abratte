@@ -1,3 +1,9 @@
+.bg-color {
+    background-color: #08081c;
+    position: relative;
+    z-index: -2; 
+}
+
 //hero section
 .hero {
 	background: url("../assets/images/taylor_portada.png") no-repeat center center fixed;
@@ -19,9 +25,6 @@
         margin: 0;
         padding-top: 500px;
         letter-spacing: 3px;
-		margin: 0;
-		padding-top: 500px;
-		letter-spacing: 3px;
 	}
 	hr {
 		width: 200%;
@@ -78,28 +81,33 @@
     }
 
 	h3 {
-		font-family: 'Montserrat', sans-serif;
-		font-weight: 700;
-		font-size: 30px;
-		color: $primary-color;
+        @include fuente-personalizada(700, 30px, $primary-color);
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
 	p {
-		font-family: 'Montserrat', sans-serif;
-		font-weight: 400;
-		font-size: 20px;
-		color: $alternative-textcolor;
-		margin-top: 5px;
-		margin-bottom: 5px;
-		margin-left: 50px;
-		margin-right: 50px;
-	}
+        @include fuente-personalizada(400, 20px, $alternative-textcolor);
+        margin: 5px 50px 5px 50px;
+    }
 }
 
 //Tour
 .tour {
-    background: url("../assets/images/fondo_contenido_tres.png");
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/images/fondo_contenido_tres.png");
+        background-size: cover;
+        opacity: 0.3;
+        z-index: -1; 
+    }
+
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -108,7 +116,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "area1 area1"
         "c1 c2"
         "area4 area4";
@@ -116,10 +124,7 @@
     &__titulo {
         grid-area: area1;
         h2 {
-            font-size: 40px;
-            color: #ffffff;
-            font-family: $font-family;
-            font-weight: 500;
+            @include fuente-personalizada(500, 40px, #fff);
             letter-spacing: 10px;
         } 
 
@@ -135,109 +140,13 @@
 
     &__columnauno .info{
         grid-area: c1;
-        
-
-        &__ol  {
-            list-style: none;
-            padding: 0; 
-            }
-
-        &__li {
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-                }
-                
-                &__fecha,
-                &__estadio,
-                &__ubicacion,
-                &__status {
-                    margin: 1px 0;
-                }
-
-                &__fecha {
-                    font-family: $font-family;
-                    font-size: 20px;
-                    font-weight: 500;
-                    color: $text-color;
-                }
-
-                &__estadio {
-                    font-family: $font-family;
-                    font-size: 24px;
-                    font-weight: 500;
-                    color: $text-color;
-                    white-space: nowrap;
-                }
-
-                &__ubicacion {
-                        font-family: $font-family;
-                        font-size: 16px;
-                        font-weight: 400;
-                        color: $text-color;
-                }
-
-                &__status {
-                    font-family: $font-family;
-                    font-size: 15px;
-                    font-weight: 400;
-                    color: #FF0000;
-                    margin: 2px 20px;
-                }
-
-            }
+        @include columna-tourpropiedades(20px, 24px, 16px, 15px, #ff0000);
+    }
 
         &__columnados .info{
             grid-area: c2;
-
-        &__ol {
-            list-style: none;
-            padding: 0; 
-            }
-
-        &__li {
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-                }
-                
-                &__fecha,
-                &__estadio,
-                &__ubicacion,
-                &__status {
-                    margin: 3px 0;
-                }
-
-                &__fecha {
-                    font-family: $font-family;
-                    font-size: 20px;
-                    font-weight: 500;
-                    color: $text-color;
-                }
-
-                &__estadio {
-                    font-family: $font-family;
-                    font-size: 24px;
-                    font-weight: 500;
-                    color: $text-color;
-                    white-space: nowrap;
-                }
-
-                &__ubicacion {
-                        font-family: $font-family;
-                        font-size: 16px;
-                        font-weight: 400;
-                        color: $text-color;
-                }
-
-                &__status {
-                    font-family: $font-family;
-                    font-size: 15px;
-                    font-weight: 400;
-                    color: #FF0000;
-                    margin: 2px 20px;
-                }
-            }
+            @include columna-tourpropiedades(20px, 24px, 16px, 15px, #ff0000);
+        }
 
         &__informacion {
             grid-area: area4;
@@ -245,15 +154,11 @@
             align-items: center;
 
             p {
-                font-family: $font-family;
-                font-size: 16px;
-                font-weight: 400;
-                color: $text-color;
+                @include fuente-personalizada(400, 16px, #fff);
                 text-align: center;
                 padding: 50px;
                 margin: 0px;
             }
         }
     }
-//fin tour
 

@@ -1,7 +1,19 @@
-//carousel
-.custom-image {
-    margin-top: 52px;
-	object-fit: cover;
+//curiosidades portada
+.curiosidades{
+	background-image: url("../assets/images/tsfacts-portada.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+	min-height: 50vh;
+    max-height: 100%;
+	align-items: center;
+	justify-content: center;
+
+	h1 {
+		text-align: center;
+		@include fuente-personalizada(600, 30px, $text-color);
+		letter-spacing: 3px;
+	}
 }
 
 //cards
@@ -67,7 +79,7 @@
 }
 .cards__detalles {
 	padding: 20px 10px;
-	h3 {
+	h2 {
 		@include fuente-personalizada(700, 18px, $text-color);
 		margin: 10px 0 15px 15px;
 	}
@@ -79,6 +91,29 @@
 	}
 }
 
+//carousel
+.carousel-inner, .carousel-item, .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+	h3 {
+		@include fuente-personalizada(600, 25px, $text-color)
+	}
+
+	p {
+		@include fuente-personalizada(400, 16px, $text-color)
+	}
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(8, 8, 28, 1), rgba(8, 8, 28, 0));
+    z-index: 0;
+}
 //seccion para datos
 .facts {
     background: url("../assets/images/taylor-datos.png");
@@ -119,7 +154,7 @@
     align-items: center;
 
     h4 {
-        @include fuente-personalizada(700, 35px, #6F99AF);
+        @include fuente-personalizada(700, 35px, $accent-color);
         margin: 0;
     }
 

@@ -12,28 +12,6 @@ $accent-color: #6F99AF;
 $text-color: #FFF;
 $alternative-textcolor: #12112E;
 
-//
-
-@mixin flex-center($direction) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
-}
-
-@mixin flex-wrap {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-@mixin fuente-personalizada($peso, $tamano, $color) {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: $peso;
-    font-size: $tamano;
-    color: $color;
-}
-
 
 
 
