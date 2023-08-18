@@ -1,102 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- seo tags -->
+    <!-- Primary Meta Tags -->
+    <title>Taylor Swift</title>
+    <meta name="title" content="Página de Fans de Taylor Swift | Proyecto CoderHouse" />
+    <meta name="description"
+        content="Explora el mundo de Taylor Swift a través de nuestra página de fans. Descubre las últimas noticias, álbumes y actualizaciones sobre la renombrada artista." />
+    <meta name="keywords"
+        content="taylor Swift, fan page, música, álbumes, canciones, eras, conciertos, noticias, biografía, artista">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abrattevalentina.github.io/PreEntrega3-Abratte/" />
+    <meta property="og:title" content="Página de Fans de Taylor Swift | Proyecto CoderHouse" />
+    <meta property="og:description"
+        content="Explora el mundo de Taylor Swift a través de nuestra página de fans. Descubre las últimas noticias, álbumes y actualizaciones sobre la renombrada artista." />
+    <meta property="og:image" content="assets/images/taylor_portada.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://abrattevalentina.github.io/PreEntrega3-Abratte/" />
+    <meta property="twitter:title" content="Página de Fans de Taylor Swift | Proyecto CoderHouse" />
+    <meta property="twitter:description"
+        content="Explora el mundo de Taylor Swift a través de nuestra página de fans. Descubre las últimas noticias, álbumes y actualizaciones sobre la renombrada artista." />
+    <meta property="twitter:image" content="assets/images/taylor_portada.webp" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+
     <!-- logo en navegador -->
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/ts-logo.svg" type="image/x-icon">
     <!-- Link a bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- Link iconos bs -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Link al css  -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Taylor Swift</title>
 </head>
 
 <body>
     <header>
-<!-- navbar -->
+        <!-- navbar -->
         <nav class="navbar fixed-top navbar-expand-md bg-personalizado">
             <div class="container-fluid">
                 <a href="index.html">
                     <img class="logo-taylor" src="assets/icons/ts-logo.svg" alt="Logo de Taylor Swift">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars"></i>
-                </span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
                 </button>
-                <div class="offcanvas offcanvas-end bg-personalizado-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Taylor Swift</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>                
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/discografia.html">Discografía</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/galeria.html">Galería</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/tsfacts.html">TsFacts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    
-                </div>
+                <div class="offcanvas offcanvas-end bg-personalizado-offcanvas" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Taylor Swift</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/discografia.html">Discografía</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/tsfacts.html">TsFacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
-<!--Inicio-->
-<main class="bg-color">
-    <article class="hero">
-        <div class="hero__section">
-            <h1>Taylor Swift</h1>
-            <hr>
-            <h2>Un viaje a través de sus eras</h2>
-        </div>
-    </article>
-
-<!--caracteristicas-->
-    <section class="caracteristicas">            
-        <dl class="caracteristicas__lista">
-            <div class="caracteristicas__item">
-                <dt><img class="icon-img" src="assets/icons/music.svg" alt="Icono de Álbumes"></dt>
-                <dd>
-                    <h3>Álbumes</h3>
-                    <p>Diez álbumes de estudio, tres en directo, dos EP, diecisiete álbumes recopilatorios y cincuenta y dos sencillos.</p>
-                </dd>
-            </div>    
-            <div class="caracteristicas__item">
-                <dt><img src="assets/icons/piano.svg" alt="Icono de Taylor's Version"></dt>
-                <dd>
-                    <h3>Taylor's Version</h3>
-                    <p>Versiones regrabadas de sus álbumes anteriores, con Taylor retomando el control de su música.</p>
-                </dd>
-            </div>    
-            <div class="caracteristicas__item">
-                <dt><img src="assets/icons/disco.svg" alt="Icono de From the Vault"></dt>
-                <dd>
-                    <h3>From the Vault</h3>
-                    <p>Canciones inéditas o no lanzadas previamente que se incluyen en las reediciones de los álbumes.</p>
-                </dd>
+    <!--Inicio-->
+    <main class="bg-color">
+        <article class="hero">
+            <div class="hero__section">
+                <h1>Taylor Swift</h1>
+                <hr>
+                <h2>Un viaje a través de sus eras</h2>
             </div>
-        </dl>
-    </section>
+        </article>
 
-<!-- tour fechas -->
-    <section class="tour">
-        <div class="tour__titulo">
-            <h2>Tour</h2>
-            <hr>
-        </div>
+        <!--caracteristicas-->
+        <section class="caracteristicas">
+            <dl class="caracteristicas__lista">
+                <div class="caracteristicas__item">
+                    <dt><i class="bi bi-music-note-list icon-img"></i></dt>
+                    <dd>
+                        <h3>Álbumes</h3>
+                        <p>Diez álbumes de estudio, tres en directo, dos EP, diecisiete álbumes recopilatorios y
+                            cincuenta y dos sencillos.</p>
+                    </dd>
+                </div>
+                <div class="caracteristicas__item">
+                    <dt><i class="bi bi-person-fill-check icon-img"></i></dt>
+                    <dd>
+                        <h3>Taylor's Version</h3>
+                        <p>Versiones regrabadas de sus álbumes anteriores, con Taylor retomando el control de su música.
+                        </p>
+                    </dd>
+                </div>
+                <div class="caracteristicas__item">
+                    <dt><i class="bi bi-vinyl-fill icon-img"></i></dt>
+                    <dd>
+                        <h3>From the Vault</h3>
+                        <p>Canciones inéditas o no lanzadas previamente que se incluyen en las reediciones de los
+                            álbumes.</p>
+                    </dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- tour fechas -->
+        <section class="tour">
+            <div class="tour__titulo">
+                <h2>Tour</h2>
+                <hr>
+            </div>
             <div class="tour__columnauno info">
                 <ol class="info__ol">
                     <li class="info__li">
@@ -111,7 +143,7 @@
                         <p class="info__ubicacion">Buenos Aires, Argentina</p>
                         <p class="info__status">Sold out</p>
                     </li>
-                    <li class="info__li"> 
+                    <li class="info__li">
                         <h3 class="info__fecha">11 de Noviembre</h3>
                         <p class="info__estadio">Estadio River Plate</p>
                         <p class="info__ubicacion">Buenos Aires, Argentina</p>
@@ -141,29 +173,40 @@
                     </li>
                 </ol>
             </div>
-        <div class="tour__informacion">
-            <p>Taylor Swift anunció la primera serie de fechas internacionales para The Eras Tour. El Registro de Fan Verificado ya se encuentra disponible para los shows en México. Los fans pueden registrarse hasta el miércoles 7 de junio a las 11:59 p.m. (hora local). La venta de tickets comenzará el 13 de junio a las 2 p.m. (hora local). Se dará prioridad de acceso a los residentes de México. Solo los fans que reciban un correo electrónico confirmando su acceso podrán unirse a la fila.</p>
-        </div>
-    </section>
-</main>
+            <div class="tour__informacion">
+                <p>Taylor Swift anunció la primera serie de fechas internacionales para The Eras Tour. El Registro de
+                    Fan Verificado ya se encuentra disponible para los shows en México. Los fans pueden registrarse
+                    hasta el miércoles 7 de junio a las 11:59 p.m. (hora local). La venta de tickets comenzará el 13 de
+                    junio a las 2 p.m. (hora local). Se dará prioridad de acceso a los residentes de México. Solo los
+                    fans que reciban un correo electrónico confirmando su acceso podrán unirse a la fila.</p>
+            </div>
+        </section>
+    </main>
 
-<!-- footer -->
+    <!-- footer -->
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__row">
                 <div class="footer__links">
-                    <a href="https://youtube.com/@TaylorSwift/" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                    <a href="https://www.instagram.com/taylorswift/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="https://twitter.com/taylorswift13?s=20" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=Et5J-zkoRyaLDzwv3Yvw-w" target="_blank" aria-label="Spotify"><i class="bi bi-spotify"></i></a>
-                </div>                
+                    <a href="https://youtube.com/@TaylorSwift/" target="_blank" aria-label="YouTube"><i
+                            class="bi bi-youtube"></i></a>
+                    <a href="https://www.instagram.com/taylorswift/" target="_blank" aria-label="Instagram"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com/taylorswift13?s=20" target="_blank" aria-label="Twitter"><i
+                            class="bi bi-twitter"></i></a>
+                    <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=Et5J-zkoRyaLDzwv3Yvw-w"
+                        target="_blank" aria-label="Spotify"><i class="bi bi-spotify"></i></a>
+                </div>
                 <div class="footer__creador">
                     <p class="footer__text">Web by<span>Valentina Abratte</span>© 2023</p>
                 </div>
             </div>
         </div>
     </footer>
-<!-- script bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
+        defer></script>
 </body>
+
 </html>

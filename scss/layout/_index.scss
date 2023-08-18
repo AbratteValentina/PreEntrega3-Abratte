@@ -1,8 +1,10 @@
+//degradado de fondo para mejorar contraste en TOUR
 .bg-color {
-    background-color: #08081c;
+    background-image: linear-gradient(to top, rgba(8, 8, 28, 1), rgba(8, 8, 28, 0.5));
     position: relative;
     z-index: -2; 
 }
+
 
 //hero section
 .hero {
@@ -65,18 +67,25 @@
 	padding: 10px;
 	dd {
 		margin: 0;
-	}
-}
+        transition: 0.5s;
+    }
 
 	h3 {
         @include fuente-personalizada(700, 30px, $primary-color);
 		margin-top: 15px;
 		margin-bottom: 15px;
-	}
-	p {
+    }
+
+	p { 
         @include fuente-personalizada(400, 20px, $alternative-textcolor);
         margin: 5px 50px 5px 50px;
     }
+
+    i {
+        font-size: 70px;
+        color: $primary-color; 
+    }
+}
 
 //Tour
 .tour {
@@ -91,7 +100,7 @@
         height: 100%;
         background-image: url("../assets/images/fondo_contenido_tres.webp");
         background-size: cover;
-        opacity: 0.3;
+        opacity: 0.5;
         z-index: -1; 
     }
 

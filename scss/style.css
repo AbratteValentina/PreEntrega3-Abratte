@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   box-sizing: border-box;
@@ -149,7 +148,7 @@
 }
 
 .bg-color {
-  background-image: linear-gradient(to top, rgb(8, 8, 28), rgba(8, 8, 28, 0.5));
+  background-color: #0b1c08;
   position: relative;
   z-index: -2;
 }
@@ -245,7 +244,7 @@
   color: #12112E;
   margin: 5px 50px 5px 50px;
 }
-.caracteristicas__item i {
+.caracteristicas__item .icon-img {
   font-size: 70px;
   color: #12112E;
 }
@@ -514,7 +513,8 @@
 .eras img {
   width: 0px;
   flex-grow: 1;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0.8;
   transition: 0.5s ease;
 }
@@ -683,22 +683,6 @@
   margin-bottom: 20px;
 }
 
-/* Animación */
-@keyframes fadeinleft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-/* Animación a todo el contenido */
-.galeria-contenedor {
-  animation: fadeinleft 1s ease-out;
-}
-
 .slider-wrapper {
   position: relative;
   width: 100%;
@@ -722,14 +706,17 @@
 .slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-top: 50px;
-  object-position: top;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .slider-nav {
   display: flex;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   position: absolute;
   bottom: 2.25rem;
   left: 50%;
@@ -776,12 +763,14 @@
 .galeria__imagenes img {
   width: 650px;
   height: 500px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 7px;
   transition: opacity 0.5s;
 }
 .galeria__imagenes img:hover {
   opacity: 0.5;
+  transition: 0.5s;
 }
 
 .videos {
@@ -789,7 +778,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  background: url("../assets/images/fondo-erastaylor.webp");
+  background: url("../assets/images/fondo-erastaylor.png");
   padding: 7px;
 }
 .videos__titulo {
@@ -834,26 +823,14 @@
   width: 630px;
   height: 385px;
   padding: 7px;
+  transition: opacity 0.5s;
 }
-
-/* Animación */
-@keyframes fadeinleft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-/* Animación a todo el contenido */
-.tsfacts-contenedor {
-  animation: fadeinleft 1s ease-out;
+.videos__galeria iframe:hover {
+  opacity: 0.5;
 }
 
 .curiosidades {
-  background-image: url("../assets/images/tsfacts-portada.webp");
+  background-image: url("../assets/images/tsfacts-portada.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -895,7 +872,8 @@
 
 .card-container {
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .card-container img {
   width: 100%;
@@ -945,7 +923,8 @@
 
 .carousel-inner, .carousel-item, .carousel-item img {
   height: 500px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .carousel-inner h3, .carousel-item h3, .carousel-item img h3 {
   font-family: "Montserrat", sans-serif;
@@ -972,7 +951,7 @@
 }
 
 .facts {
-  background: url("../assets/images/taylor-datos.webp");
+  background: url("../assets/images/taylor-datos.png");
   background-size: cover;
   padding: 60px;
 }
@@ -1026,22 +1005,6 @@
   margin: 0;
 }
 
-/* Animación */
-@keyframes fadeinleft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-/* Animación a todo el contenido */
-.contacto-contenedor {
-  animation: fadeinleft 1s ease-out;
-}
-
 .contacto {
   position: relative;
   min-height: 100vh;
@@ -1050,7 +1013,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url("../assets/images/contacto-background.webp");
+  background: url(../assets/images/contacto-background.png);
   background-size: cover;
 }
 .contacto .contenido {
@@ -1200,15 +1163,17 @@
     margin: 15px auto;
   }
 }
-@media (max-width: 1000px) {
-  .bg-color {
-    background-image: none;
-  }
+@media (max-width: 1099px) and (max-width: 1000px) {
   .tour {
     position: relative;
   }
   .tour::before {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/images/fondo_contenido_tres.png");
+    background-size: cover;
     opacity: 1;
+    z-index: -1;
   }
 }
 @media (max-width: 920px) {
@@ -1479,7 +1444,8 @@
   .eras img {
     width: 0px;
     flex-grow: 1;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     opacity: 0.8;
     transition: 0.5s ease;
   }
@@ -1564,7 +1530,8 @@
 @media (max-width: 700px) {
   .galeria__imagenes img,
   .videos__galeria iframe {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     padding: 7px;
   }
   .galeria__imagenes img {
@@ -1635,7 +1602,8 @@
 @media (max-width: 1000px) {
   .carousel-inner, .carousel-item, .carousel-item img {
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .carousel-item h3 {
     font-family: "Montserrat", sans-serif;
@@ -1695,6 +1663,4 @@
     width: 20vh;
     height: 20vh;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

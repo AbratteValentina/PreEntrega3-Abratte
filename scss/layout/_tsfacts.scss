@@ -1,6 +1,23 @@
+/* Animación */
+@keyframes fadeinleft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación a todo el contenido */
+.tsfacts-contenedor{
+		animation: fadeinleft 1s ease-out;
+}
+
 //curiosidades portada
 .curiosidades{
-	background-image: url("../assets/images/tsfacts-portada.png");
+	background-image: url("../assets/images/tsfacts-portada.webp");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -116,7 +133,7 @@
 }
 //seccion para datos
 .facts {
-    background: url("../assets/images/taylor-datos.png");
+    background: url("../assets/images/taylor-datos.webp");
     background-size: cover;
     padding: 60px;
 }

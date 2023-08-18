@@ -1,5 +1,5 @@
 //INDEX
-//inicio
+//inicio 
 @media (max-width: 1099px) {
     .hero__section {
         hr {
@@ -7,22 +7,20 @@
         margin: 15px auto;
         }
     }
-    
-    @media (max-width: 1000px){
-        .tour {
-            position: relative;
-        
-            &::before {
-                content: "";
-                position: absolute;
-                background-image: url("../assets/images/fondo_contenido_tres.png");
-                background-size: cover;
-                opacity: 1;
-                z-index: -1; 
-                }
-            }
-        }
 }
+
+@media (max-width: 1000px) {
+    .bg-color {
+        background-image: none;
+    }
+    .tour {
+        position: relative;    
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
 //caracteristicas
 @media (max-width: 920px) {
     .caracteristicas__lista {
