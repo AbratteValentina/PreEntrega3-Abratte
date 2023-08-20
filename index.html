@@ -19,7 +19,8 @@
     <meta property="og:title" content="Página de Fans de Taylor Swift | Proyecto CoderHouse" />
     <meta property="og:description"
         content="Explora el mundo de Taylor Swift a través de nuestra página de fans. Descubre las últimas noticias, álbumes y actualizaciones sobre la renombrada artista." />
-    <meta property="og:image" content="assets/images/taylor_portada.webp" />
+    <meta property="og:image"
+        content="https://taylorswift-30but7usa-abrattevalentina.vercel.app/assets/images/taylor_portada.webp" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -27,16 +28,18 @@
     <meta property="twitter:title" content="Página de Fans de Taylor Swift | Proyecto CoderHouse" />
     <meta property="twitter:description"
         content="Explora el mundo de Taylor Swift a través de nuestra página de fans. Descubre las últimas noticias, álbumes y actualizaciones sobre la renombrada artista." />
-    <meta property="twitter:image" content="assets/images/taylor_portada.webp" />
+    <meta property="twitter:image"
+        content="https://taylorswift-30but7usa-abrattevalentina.vercel.app/assets/images/taylor_portada.webp" />
     <!-- Meta Tags Generated with https://metatags.io -->
 
     <!-- logo en navegador -->
     <link rel="shortcut icon" href="assets/icons/ts-logo.svg" type="image/x-icon">
-    <!-- Link a bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!-- Link iconos bs -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Link a bootstrap con defer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"
+        defer>
+    <!-- Link a iconos Bootstrap con defer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" defer>
     <!-- Link al css  -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -52,13 +55,13 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars"></i>
+                        <i class="bi bi-list"></i>
                     </span>
                 </button>
                 <div class="offcanvas offcanvas-end bg-personalizado-offcanvas" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Taylor Swift</h5>
+                        <a class="offcanvas-title" id="offcanvasNavbarLabel" href="index.html">Taylor Swift</a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -76,20 +79,19 @@
                                 <a class="nav-link" href="pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!--Inicio-->
     <main class="bg-color">
+        <!-- hero seciton -->
         <article class="hero">
             <div class="hero__section">
                 <h1>Taylor Swift</h1>
                 <hr>
-                <h2>Un viaje a través de sus eras</h2>
+                <p>Un viaje a través de sus eras</p>
             </div>
         </article>
 
@@ -97,25 +99,25 @@
         <section class="caracteristicas">
             <dl class="caracteristicas__lista">
                 <div class="caracteristicas__item">
-                    <dt><i class="bi bi-music-note-list icon-img"></i></dt>
+                    <dt><i class="ba bi-music-note-list icon-img"></i></dt>
                     <dd>
-                        <h3>Álbumes</h3>
+                        <h2>Álbumes</h2>
                         <p>Diez álbumes de estudio, tres en directo, dos EP, diecisiete álbumes recopilatorios y
                             cincuenta y dos sencillos.</p>
                     </dd>
                 </div>
                 <div class="caracteristicas__item">
-                    <dt><i class="bi bi-person-fill-check icon-img"></i></dt>
+                    <dt><i class="ba bi-person-fill-check icon-img"></i></dt>
                     <dd>
-                        <h3>Taylor's Version</h3>
+                        <h2>Taylor's Version</h2>
                         <p>Versiones regrabadas de sus álbumes anteriores, con Taylor retomando el control de su música.
                         </p>
                     </dd>
                 </div>
                 <div class="caracteristicas__item">
-                    <dt><i class="bi bi-vinyl-fill icon-img"></i></dt>
+                    <dt><i class="ba bi-vinyl-fill icon-img"></i></dt>
                     <dd>
-                        <h3>From the Vault</h3>
+                        <h2>From the Vault</h2>
                         <p>Canciones inéditas o no lanzadas previamente que se incluyen en las reediciones de los
                             álbumes.</p>
                     </dd>
@@ -189,13 +191,13 @@
             <div class="footer__row">
                 <div class="footer__links">
                     <a href="https://youtube.com/@TaylorSwift/" target="_blank" aria-label="YouTube"><i
-                            class="bi bi-youtube"></i></a>
+                            class="be bi-youtube"></i></a>
                     <a href="https://www.instagram.com/taylorswift/" target="_blank" aria-label="Instagram"><i
-                            class="bi bi-instagram"></i></a>
+                            class="be bi-instagram"></i></a>
                     <a href="https://twitter.com/taylorswift13?s=20" target="_blank" aria-label="Twitter"><i
-                            class="bi bi-twitter"></i></a>
+                            class="be bi-twitter"></i></a>
                     <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=Et5J-zkoRyaLDzwv3Yvw-w"
-                        target="_blank" aria-label="Spotify"><i class="bi bi-spotify"></i></a>
+                        target="_blank" aria-label="Spotify"><i class="be bi-spotify"></i></a>
                 </div>
                 <div class="footer__creador">
                     <p class="footer__text">Web by<span>Valentina Abratte</span>© 2023</p>
@@ -204,9 +206,9 @@
         </div>
     </footer>
     <!-- script bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
-        defer></script>
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

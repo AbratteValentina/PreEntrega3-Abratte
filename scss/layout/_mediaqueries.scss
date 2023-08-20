@@ -1,10 +1,9 @@
 //INDEX
-//inicio 
 @media (max-width: 1099px) {
     .hero__section {
         hr {
-        width: 750px;
-        margin: 15px auto;
+            width: 750px;
+            margin: 15px auto;
         }
     }
 }
@@ -13,33 +12,35 @@
     .bg-color {
         background-image: none;
     }
+
     .tour {
-        position: relative;    
+        position: relative;
+
         &::before {
             opacity: 1;
         }
     }
 }
 
-//caracteristicas
 @media (max-width: 920px) {
     .caracteristicas__lista {
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .caracteristicas__item { 
+    .caracteristicas__item {
         p {
-        font-size: 20px;
-        margin-left: 150px;
-        margin-right: 150px;
+            font-size: 20px;
+            margin-left: 150px;
+            margin-right: 150px;
         }
     }
 }
-//caracteristicas / tour
+
 @media (max-width: 895px) {
-    .hero__section { hr {
-        width: 550px;
+    .hero__section {
+        hr {
+            width: 550px;
         }
     }
 
@@ -53,32 +54,31 @@
     .tour {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
-        grid-template-areas: 
+        grid-template-areas:
             "area1"
             "c1"
             "c2"
             "area4";
 
-            &__columnauno {
-                grid-area: c1;
-                justify-self: center;
-                margin-top: 100px;
-            }
+        &__columnauno {
+            grid-area: c1;
+            justify-self: center;
+            margin-top: 100px;
+        }
 
-            &__columnados {
-                grid-area: c2;
-                justify-self: center;
+        &__columnados {
+            grid-area: c2;
+            justify-self: center;
 
-                ol li {
-                    list-style: none;
-                    padding: 0;
-                    margin-left: 30px;
-                    margin-bottom: 0;
-                    }
+            ol li {
+                list-style: none;
+                padding: 0;
+                margin-left: 30px;
+                margin-bottom: 0;
             }
         }
-    } 
-//inicio / tour
+    }
+}
 
 @media (max-width: 615px) {
     .hero__section {
@@ -86,104 +86,106 @@
             @include fuente-personalizada(600, 50px, $text-color);
             letter-spacing: 0;
         }
+
         hr {
-        width: 100px;
+            width: 100px;
+        }
+    }
+
+    .caracteristicas {
+        &__lista {
+            @include flex-center(column);
+            padding: 0;
+            margin-top: 0;
+        }
+
+        dl {
+            margin-bottom: 0;
+        }
+
+        &__item {
+            text-align: center;
+            padding: 20px 0;
+
+            dd {
+                margin: 0;
+            }
+
+            dt {
+                img {
+                    padding: 5px;
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
+            h2 {
+                font-size: 25px;
+                margin: 10px 0;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 0;
+                padding: 0 20px;
+            }
         }
     }
 
     .tour {
-        grid-template-columns: 1fr; 
-        grid-template-rows: repeat(3, auto); 
-        grid-template-areas: 
-        "area1"
-        "c1"
-        "c2"
-        "area4";
-    
-        &__columnauno {
-            grid-area: c1;
-            justify-self: flex-start;
-            margin: 30px 0 0 0;
-            }
-    
-            ol li {
-                list-style: none;
-                padding: 0;
-                margin-left: 0;
-                margin-bottom: 0;
-                }
+        padding: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "area1"
+            "c1"
+            "c2"
+            "area4";
 
-                ol {
-                    margin-bottom: 0;
-                    padding-left: 0;
-                }
-    
-            &__columnados {
-                    grid-area: c2;
-                    justify-self: flex-start;
-                    margin-bottom: 30px;
-            }
-    
-            &__informacion {
-                justify-content: flex-start;
-    
-                p {
-                    text-align: left;
-                    padding: 0;
-                }
-            }
-        }    
-
-        .caracteristicas {
-            &__lista {
-                @include flex-center(column);
-                padding: 0;
-                margin-top: 0;
-            }
-    
-            dl {
-                margin-bottom: 0;
-            }
-    
-            &__item {
-                text-align: center;
-                padding: 20px 0;
-    
-                dd {
-                    margin: 0;
-                }
-    
-                dt {
-                    img {
-                        padding: 5px;
-                        width: 70px;
-                        height: 70px;
-                    }
-                }
-    
-                h3 {
-                    font-size: 25px;
-                    margin: 10px 0;
-                }
-    
-                p {
-                    font-size: 16px;
-                    margin: 0;
-                    padding: 0 20px;
-                }
+        &__titulo {
+            hr {
+                width: 0;
             }
         }
+
+        &__columnauno,
+        &__columnados {
+            justify-self: flex-start;
+            margin: 30px 0;
+        }
+
+        &__columnados {
+            margin-top: -24px;
+        }
+
+        ol li,
+        ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .tour__informacion {
+            justify-content: flex-start;
+
+            p {
+                text-align: left;
+                padding: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 430px) {
     .tour {
         padding: 25px;
 
-        &__columnauno .info{
+        &__columnauno .info {
             grid-area: c1;
             @include columna-tourpropiedades(16px, 20px, 16px, 15px, #ff0000);
         }
-        &__columnados .info{
+
+        &__columnados .info {
             grid-area: c1;
             @include columna-tourpropiedades(16px, 20px, 16px, 15px, #ff0000);
         }
@@ -191,183 +193,184 @@
 }
 
 //DISCOGRAFIA
-//datos discografia
-@media (max-width: 1620px){
+@media (max-width: 1620px) {
     .discografia__taylor {
         position: absolute;
-        width:700px;
+        width: 700px;
         z-index: 1;
+    }
+}
+
+@media (max-width: 1280px) {
+    .discografia__taylor {
+        position: absolute;
+        width: 500px;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 835px) {
+    .discografia__titulo {
+        margin-top: 50px;
+        margin-left: 10px;
+
+        h1 {
+            font-size: 60px;
+            padding: 40px;
         }
     }
-    
-@media (max-width: 1280px){
-        .discografia__taylor {
-            position: absolute;
-            width:500px;
-            z-index: 1;
-            }
+
+    .discografia__spotify {
+        margin-left: 110px;
+    }
+
+    .discografia__content .datos {
+
+        &__ol {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            gap: 25px;
         }
-    
-@media (max-width: 835px) {
-            .discografia__titulo {
-                margin-top: 50px;
-                margin-left: 10px;
-                h1 {
-                    font-size: 60px;    
-                    padding: 40px;
-                }
-            }
-        
-        .discografia__spotify {
-                margin-left: 110px;
-            }
-        
-            .discografia__content .datos{    
-        
-                &__ol  {
-                    list-style: none;
-                    padding: 0; 
-                    display: flex;
-                    flex-direction: column;
-                    margin-left: 10px;
-                    gap: 25px;
-                    }
-        
-                    &__li  {
-                        margin-left: 10px;    
-                    }
-                }
-            }
-    
-@media (max-width: 700px){
-            .discografia__taylor {
-                position: absolute;
-                width:500px;
-                z-index: -1;
-                }
-            }
-    
+
+        &__li {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .discografia__taylor {
+        position: absolute;
+        width: 500px;
+        z-index: -1;
+    }
+}
+
 //eras taylor
 @media (max-width: 920px) {
     .eras {
         display: flex;
         width: 100%;
-        height:800px;
+        height: 800px;
         background-color: $primary-color;
-    
+
         img {
             width: 0px;
             flex-grow: 1;
             object-fit: cover;
             opacity: 0.8;
             transition: 0.5s ease;
-    
+
             &:hover {
-                cursor: crosshair; 
+                cursor: crosshair;
                 width: 200px;
                 opacity: 1;
                 filter: contrast(120%);
-                }
             }
         }
     }
-    
-//albumes
-@media (max-width: 550px) {
-        .album {
-            .fearless-text h2,
-            .speaknow-text h2,
-            .red-text h2,
-            .reputation-text h2 {
-                font-size: 35px;
-            }
-    
-            .fearless-text h3,
-            .speaknow-text h3,
-            .red-text h3,
-            .reputation-text h3 {
-                font-size: 16px;
-            }
-        }
-    }
-    
-//Información sobre albumes + spotify
-    .disco {
-                &__title,
-                &__description,
-                &__year {
-                    margin: 20px 0px 20px 5px;
-                }
-    
-                &__title {
-                    font-size: 30px;
-                    }
-    
-                &__spotify {
-                    margin-left: 5px;
-    
-                    iframe {
-                    width: 300px;
-                    height: 400px;
-                }
-            }
-    }
+}
 
+//albumes
 @media (max-width: 550px) {
     .albumes-taylor {
         padding: 20px;
     }
 
-    .disco {        
-        &__li {
-                display: flex;
-                flex-direction: column;
-                padding: 25px;
-            }
-                
-                &__title,
-                &__description,
-                &__year {
-                    margin: 20px 0px 20px 10px;
-                }
-    
-                &__title {
-                    @include fuente-personalizada(700, 30px, $text-color);
-                }
-    
-                &__description {
-                    @include fuente-personalizada(400, 16px, $text-color);
-                }
+    .album {
 
-                &__spotify {    
-                    iframe {
-                    width: 250px;
-                    height: 100px;
+        .fearless-text h2,
+        .speaknow-text h2,
+        .red-text h2,
+        .reputation-text h2 {
+            font-size: 35px;
+        }
+
+        .fearless-text p,
+        .speaknow-text p,
+        .red-text p,
+        .reputation-text p {
+            font-size: 16px;
+        }
+    }
+
+    .disco {
+        padding: 0px;
+
+        .disco__li {
+            padding: 15px;
+
+            .disco__title {
+                @include fuente-personalizada(700, 30px, $text-color);
+                margin: 20px 0px 20px 10px;
+            }
+
+            .disco__description {
+                @include fuente-personalizada(400, 16px, $text-color);
+                margin: 20px 0px 20px 10px;
+            }
+
+            .disco__year {
+                @include fuente-personalizada(400, 16px, $text-color);
+                margin: 20px 0px 20px 10px;
+            }
+
+            .disco__spotify {
+
+                iframe {
+                    width: 300px;
+                    height: 450px;
                 }
             }
         }
+    }
 }
 
 @media (max-width: 400px) {
     .disco {
-        &__li {
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-    
-                .discos-base {
-                    background-size: cover;
-                    width: 100%;
-                    padding: 10px;
-                    display: flex;
-                    align-items: flex-start;
+        padding: 10px;
+
+        &__taylor {
+            margin: 50px;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+
+        .disco__li {
+            padding: 15px;
+            padding-bottom: 0px;
+
+            .disco__spotify {
+
+                iframe {
+                    width: 250px;
+                    height: 150px;
                 }
             }
         }
+    }
 }
+
+@media (max-width: 350px) {
+    .album {
+
+        .fearless-text h2,
+        .speaknow-text h2,
+        .red-text h2,
+        .reputation-text h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+
 //GALERIA
 //imagenes / videos
 @media (max-width: 700px) {
+
     .galeria__imagenes img,
     .videos__galeria iframe {
         object-fit: cover;
@@ -384,6 +387,7 @@
         height: 215px;
     }
 }
+
 //imagenes / videos
 @media (max-width: 550px) {
     .galeria__imagenes img {
@@ -394,6 +398,15 @@
     .videos__galeria iframe {
         width: 350px;
         height: 200px;
+    }
+
+    .slider-nav {
+        bottom: 1rem;
+
+        a {
+            width: 0.4rem;
+            height: 0.4rem;
+        }
     }
 }
 
@@ -408,27 +421,41 @@
         width: 250px;
         height: 125px;
     }
+
+    .slider-nav {
+        bottom: 13px;
+
+        a {
+            width: 0.3rem;
+            height: 0.3rem;
+        }
+    }
 }
 
 // TS FACTS
 //carousel (tambien aplica al carousel de galeria)
 @media (max-width: 1920px) {
-    .carousel-item img{
+    .carousel-item img {
         height: 800px;
-        }
     }
+}
 
 @media (max-width: 1000px) {
-        .carousel-item img{
-            width: 100%;
-            height: auto;
-            }
-        }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 //cards
 @media (max-width: 450px) {
     .cards {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .carousel-indicators [data-bs-target] {
+        height: 5px;
+        width: 5px;
     }
 }
 
@@ -439,13 +466,13 @@
 }
 
 @media (max-width: 400px) {
-.facts {
-    padding: 40px;
-}
+    .facts {
+        padding: 40px;
+    }
 
-.facts__titulo {
-    hr {
-        width: 50px;
+    .facts__titulo {
+        hr {
+            width: 50px;
         }
     }
 
@@ -461,10 +488,14 @@
 
 // CAROUSEL MEDIA QUERIES 
 @media (max-width: 1000px) {
-    .carousel-inner, .carousel-item, .carousel-item img{
+
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item img {
         height: 100%;
-        object-fit: cover; 
+        object-fit: cover;
     }
+
     .carousel-item h3 {
         @include fuente-personalizada(600, 19px, $text-color);
     }
@@ -482,7 +513,7 @@
     .contacto {
         padding: 50px;
     }
-    
+
     .container {
         flex-direction: column;
     }
@@ -502,16 +533,18 @@
     .mapa {
         margin-top: 50px;
         width: 30vh;
-        height: 20vh; 
+        height: 20vh;
     }
 }
 
 @media (max-width: 450px) {
-.contacto{
-    padding: 30px;
-}
+    .contacto {
+        padding: 30px;
+    }
+
     .container {
         width: 100%;
+
         .contacto__info {
             width: 100%;
 
@@ -528,9 +561,10 @@
             }
         }
     }
+
     .mapa {
         margin-top: 50px;
         width: 20vh;
-        height: 20vh; 
+        height: 20vh;
     }
 }

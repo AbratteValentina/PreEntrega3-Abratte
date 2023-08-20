@@ -11,6 +11,13 @@
     flex-wrap: wrap;
 }
 
+@mixin flex-properties($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 @mixin fuente-personalizada($peso, $tamano, $color) {
     font-family: 'Montserrat', sans-serif;
     font-weight: $peso;

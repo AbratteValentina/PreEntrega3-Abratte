@@ -1,5 +1,5 @@
 .bg-personalizado {
-    background-color:$primary-color;
+    background-color: $primary-color;
 }
 
 .bg-personalizado-offcanvas {
@@ -30,6 +30,15 @@
     color: $accent-color;
 }
 
+.bi::before {
+    color: $accent-color;
+    font-size: 30px;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+}
+
 .fa-bars {
     margin-top: 5px;
     color: $accent-color;
@@ -40,7 +49,6 @@
     height: 32px;
 }
 
-
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
@@ -50,17 +58,13 @@
     border-radius: 0.25rem;
 }
 
-.navbar-toggler-icon {
-    background-image: none;
-}
-
 .navbar-toggler {
     --bs-navbar-toggler-border-color: none;
     --bs-navbar-toggler-border-radius: 0;
     --bs-navbar-toggler-focus-width: 0;
     --bs-navbar-toggler-transition: none;
     cursor: pointer;
-    border: none; 
+    border: none;
 }
 
 .offcanvas-title {
@@ -69,6 +73,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 25px;
+    text-decoration: none;
 }
 
 .nav-link {
@@ -77,9 +82,8 @@
     font-family: $font-family;
     font-weight: 400;
     font-size: 16px;
-    
-        &:hover {
-            color: $accent-color;
-        }
-}
 
+    &:hover {
+        color: $accent-color;
+    }
+}

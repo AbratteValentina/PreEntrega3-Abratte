@@ -1,30 +1,29 @@
 /* Animación */
 @keyframes fadeinleft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+	from {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 /* Animación a todo el contenido */
-.tsfacts-contenedor{
-		animation: fadeinleft 1s ease-out;
+.tsfacts-contenedor {
+	animation: fadeinleft 1s ease-out;
 }
 
 //curiosidades portada
-.curiosidades{
+.curiosidades {
 	background-image: url("../assets/images/tsfacts-portada.webp");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+	background-size: cover;
+	@include flex-properties(column, center, center);
 	min-height: 50vh;
-    max-height: 100%;
-	align-items: center;
-	justify-content: center;
+	max-height: 100%;
+
 
 	h1 {
 		text-align: center;
@@ -42,25 +41,30 @@
 	font-family: 'Montserrat', sans-serif;
 	padding: 50px 0 50px 0;
 }
+
 .cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	padding: 20px;
 	grid-gap: 40px;
 }
+
 .card {
 	background-color: $primary-color;
 	border-radius: 20px;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
 }
+
 .card-container {
 	position: relative;
-	clip-path: polygon(0 0,100% 0,100% 85%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
 	img {
 		width: 100%;
 		display: block;
 		border-radius: 20px 20px 0 0;
 	}
+
 	&:after {
 		content: "";
 		height: 100%;
@@ -72,6 +76,7 @@
 		opacity: 0.7;
 		transition: 0.5s ease;
 	}
+
 	&.gradient {
 		&:hover {
 			&::after {
@@ -79,6 +84,7 @@
 			}
 		}
 	}
+
 	&.gradientdos {
 		&:hover {
 			&::after {
@@ -86,6 +92,7 @@
 			}
 		}
 	}
+
 	&.gradienttres {
 		&:hover {
 			&::after {
@@ -94,24 +101,29 @@
 		}
 	}
 }
+
 .cards__detalles {
 	padding: 20px 10px;
+
 	h2 {
 		@include fuente-personalizada(700, 18px, $text-color);
 		margin: 10px 0 15px 15px;
 	}
+
 	p {
 		@include fuente-personalizada(400, 16px, #B7B7B7);
 		line-height: 30px;
-		font-weight: 400;
 		margin-left: 15px;
 	}
 }
 
 //carousel
-.carousel-inner, .carousel-item, .carousel-item img {
-    height: 500px;
-    object-fit: cover;
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+	height: 500px;
+	object-fit: cover;
+
 	h3 {
 		@include fuente-personalizada(600, 25px, $text-color)
 	}
@@ -121,62 +133,66 @@
 	}
 }
 
-.carousel-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to top, rgba(8, 8, 28, 1), rgba(8, 8, 28, 0));
-    z-index: 0;
+.carousel-indicators [data-bs-target] {
+	height: 9px;
+	width: 9px;
+	border-radius: 100%;
 }
+
+.carousel-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(to top, rgba(8, 8, 28, 1), rgba(8, 8, 28, 0));
+	z-index: 0;
+}
+
 //seccion para datos
 .facts {
-    background: url("../assets/images/taylor-datos.webp");
-    background-size: cover;
-    padding: 60px;
+	background: url("../assets/images/taylor-datos.webp");
+	background-size: cover;
+	padding: 60px;
 }
 
 .facts__titulo {
-    h2 {
-        @include fuente-personalizada(500, 35px, $text-color);
-    }
+	h2 {
+		@include fuente-personalizada(500, 35px, $text-color);
+	}
 
-    hr {
-        width: 300px;
-        height: 2px;
-        background-color: $text-color;
-        margin-top: 20px;
-        border-top: none;
-        opacity: 1;
-    }
+	hr {
+		width: 300px;
+		height: 2px;
+		background-color: $text-color;
+		margin-top: 20px;
+		border-top: none;
+		opacity: 1;
+	}
 }
 
 .container-rectangulo {
-    @include flex-wrap;
-    margin: 100px 0 100px 0;
+	@include flex-wrap;
+	margin: 100px 0 100px 0;
 }
 
 .rectangulo {
-    width: 200px;
-    height: 150px;
-    border: 2px solid #fff;
-    margin: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	width: 200px;
+	height: 150px;
+	border: 2px solid #fff;
+	margin: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	@include flex-properties(column, center, center);
 
-    h4 {
-        @include fuente-personalizada(700, 35px, $accent-color);
-        margin: 0;
-    }
+	h4 {
+		@include fuente-personalizada(700, 35px, $accent-color);
+		margin: 0;
+	}
 
-    P {
-        @include fuente-personalizada(400, 15px, #FFF);
-        margin: 0;
-    }
+	P {
+		@include fuente-personalizada(400, 15px, #FFF);
+		margin: 0;
+	}
 }

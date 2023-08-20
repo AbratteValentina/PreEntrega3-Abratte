@@ -13,7 +13,7 @@
 .discografia__taylor {
     position: absolute;
     bottom: 0;
-    right: 10%; 
+    right: 10%;
 }
 
 .anim {
@@ -23,7 +23,7 @@
 }
 
 @keyframes moveup {
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0px);
     }
@@ -31,51 +31,51 @@
 
 .discografia__titulo {
     margin-top: 10%;
+
     h1 {
         @include fuente-personalizada(700, 70px, $text-color);
         padding: 80px;
         letter-spacing: 5px;
-	}
+    }
 }
 
-.discografia__content .datos{    
-
-    &__ol  {
+.discografia__content .datos {
+    &__ol {
         list-style: none;
-        padding: 0; 
+        padding: 0;
         display: flex;
         flex-direction: row;
         margin-left: 50px;
-        }
+    }
 
     &__li {
-            display: flex;
-            flex-direction: column;
-            padding: 0 30px 0 30px;
-            }
-            
-            &__numero,
-            &__stats,
-            &__plataforma {
-                margin: 1px 0;
-            }
-
-            &__numero {
-                @include fuente-personalizada(600, 24px, $text-color);
-                margin-bottom: 3px;
-            }
-
-            &__stats {
-				@include fuente-personalizada(600, 18px, $text-color);
-                white-space: nowrap;
-                margin: 3px 0 3px 0;
-            }
-
-            &__plataforma {
-				@include fuente-personalizada(400, 18px, $text-color);
-                margin-top: 3px;
-            }
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px 0 30px;
     }
+
+    &__numero,
+    &__stats,
+    &__plataforma {
+        margin: 1px 0;
+    }
+
+    &__numero {
+        @include fuente-personalizada(600, 24px, $text-color);
+        margin-bottom: 3px;
+    }
+
+    &__stats {
+        @include fuente-personalizada(600, 18px, $text-color);
+        white-space: nowrap;
+        margin: 3px 0 3px 0;
+    }
+
+    &__plataforma {
+        @include fuente-personalizada(400, 18px, $text-color);
+        margin-top: 3px;
+    }
+}
 
 .discografia__spotify {
     width: 50px;
@@ -83,35 +83,33 @@
     margin: 50px 0px 0px 80px;
     margin-left: 130px;
 
-
-    button{
+    button {
         font-weight: 400;
         font-size: 18px;
         letter-spacing: 1px;
-        color:$text-color;
+        color: $text-color;
         padding: 9px 25px;
         background: none;
         border: 2px solid $text-color;
-        border-radius: 30px; 
-        border-top-right-radius: 0;   
+        border-radius: 30px;
+        border-top-right-radius: 0;
         cursor: pointer;
         transition: all 0.3s ease 0s;
-    
-    &:hover{
-        background-color: $text-color;
-        color: #12112E;
-        transform:scale(1.1);
-        font-weight: 700;
+
+        &:hover {
+            background-color: $text-color;
+            color: #12112E;
+            transform: scale(1.1);
+            font-weight: 700;
         }
     }
 }
-//fin discografia datos
 
 //discografia fotos de sus eras
 .eras {
     display: flex;
     width: 100%;
-    height:800px;
+    height: 800px;
     background-color: $primary-color;
 
     img {
@@ -122,20 +120,17 @@
         transition: 0.5s ease;
 
         &:hover {
-            cursor: crosshair; 
+            cursor: crosshair;
             width: 300px;
             opacity: 1;
             filter: contrast(120%);
+        }
     }
 }
-}
-//fin fotos de sus eras
 
 //albumes
 .albumes-taylor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-properties(row, center, center);
     width: 100%;
     background-color: #080818;
     padding: 50px;
@@ -173,10 +168,7 @@
         color: #ffffff;
         text-align: center;
         opacity: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-properties(column, center, center);
         transition: 0.5s ease;
 
         h2 {
@@ -193,7 +185,7 @@
             opacity: 100%;
         }
 
-        h3 {
+        p {
             font-size: 20px;
             font-weight: 300;
             margin-top: 5px;
@@ -203,6 +195,7 @@
     .fearless-text {
         @extend .album-text;
         background: linear-gradient(to bottom, rgba(171, 122, 36, 0), rgba(171, 122, 36, 1));
+
         h2 {
             color: #ffffff;
         }
@@ -211,6 +204,7 @@
     .speaknow-text {
         @extend .album-text;
         background: linear-gradient(to bottom, rgba(81, 22, 81, 0), rgba(81, 22, 81, 1));
+
         h2 {
             color: #ffffff;
         }
@@ -219,6 +213,7 @@
     .red-text {
         @extend .album-text;
         background: linear-gradient(to bottom, rgba(149, 30, 26, 0), rgba(149, 30, 26, 1));
+
         h2 {
             color: #ffffff;
         }
@@ -227,96 +222,82 @@
     .reputation-text {
         @extend .album-text;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+
         h2 {
             color: #ffffff;
         }
     }
 }
-//fin albumes
 
 //Información sobre albumes + spotify
 .disco {
-	background-color: #080818;
-	padding: 20px;
+    background-color: #080818;
+    padding: 20px;
     display: flex;
-	align-items: center;
-	justify-content: center;
+    align-items: center;
+    justify-content: center;
 
-	&__taylor {
-		margin: 50px 50px 50px 50px;
-	}
+    &__taylor {
+        margin: 50px;
+    }
 
-	ol  {
-		list-style: none;
-		padding: 0; 
-		}
+    ol {
+        list-style: none;
+        padding: 0;
+    }
 
-	&__li {
-			display: flex;
-			flex-direction: column;
-			padding: 30px;
+    .disco__li {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        margin-bottom: 30px;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
 
-			.discos-base {
-                background-size: cover;
-                width: 100%;
-                display: flex;
-                align-items: flex-start;
+        &.fearless {
+            background: url("../assets/images/disco-fearless.webp");
+        }
+
+        &.speaknow {
+            background: url("../assets/images/disco-speaknow.webp");
+        }
+
+        &.red {
+            background: url("../assets/images/disco-red.webp");
+        }
+
+        &.reputation {
+            background: url("../assets/images/disco-reputation.webp");
+        }
+
+        .disco__title {
+            @include fuente-personalizada(700, 40px, $text-color);
+            margin: 20px 0px 20px 20px;
+        }
+
+        .disco__description {
+            @include fuente-personalizada(400, 18px, $text-color);
+            margin: 20px 0px 20px 20px;
+        }
+
+        .disco__year {
+            @include fuente-personalizada(400, 16px, $text-color);
+            margin: 20px 0px 20px 20px;
+        }
+
+        .disco__spotify {
+            display: flex;
+            align-items: center;
+            align-self: center;
+
+            iframe {
+                border-radius: 12px;
+                width: 400px;
+                height: 450px;
+                margin-bottom: 20px;
             }
-            
-            &.fearless {
-                @extend .discos-base;
-                background: url("../assets/images/disco-fearless.webp");
-                margin-bottom: 30px;
-            }
-            
-            &.speaknow {
-                @extend .discos-base;
-                background: url("../assets/images/disco-speaknow.webp");
-                margin-bottom: 30px;
-            }
-            
-            &.red {
-                @extend .discos-base;
-                background: url("../assets/images/disco-red.webp");
-                margin-bottom: 30px;
-            }
-            
-            &.reputation {
-                @extend .discos-base;
-                background: url("../assets/images/disco-reputation.webp");
-                margin-bottom: 30px;
-            }
-		}
-			
-			&__title,
-			&__description,
-			&__year {
-				margin: 20px 0px 20px 20px;
-			}
-
-			&__title {
-                @include fuente-personalizada(700, 40px, $text-color);
-			}
-
-			&__description {
-                @include fuente-personalizada(400, 18px, $text-color);
-			}
-
-			&__year {
-                @include fuente-personalizada(400, 16px, $text-color);
-			}
-
-			&__spotify {
-				display: flex;
-				align-items: center;
-				align-self: center;
-
-			    iframe {
-				border-radius: 12px;
-				width: 400px;
-				height: 450px;
-				margin-bottom: 20px;
-			}
-		}
+        }
+    }
 }
-

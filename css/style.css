@@ -38,6 +38,15 @@
   color: #6F99AF;
 }
 
+.bi::before {
+  color: #6F99AF;
+  font-size: 30px;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+}
+
 .fa-bars {
   margin-top: 5px;
   color: #6F99AF;
@@ -57,10 +66,6 @@
   border-radius: 0.25rem;
 }
 
-.navbar-toggler-icon {
-  background-image: none;
-}
-
 .navbar-toggler {
   --bs-navbar-toggler-border-color: none;
   --bs-navbar-toggler-border-radius: 0;
@@ -76,6 +81,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 25px;
+  text-decoration: none;
 }
 
 .nav-link {
@@ -186,18 +192,15 @@
   width: 200%;
   height: 2px;
   background-color: #FFF;
-  margin: 15px auto;
-  margin-left: -50%;
-  margin-right: -50%;
+  margin: 15px auto 15px -50%;
   border-top: none;
   opacity: 100%;
 }
-.hero__section h2 {
+.hero__section p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: #FFF;
-  font-weight: 500;
   margin: 0;
 }
 
@@ -209,34 +212,28 @@
   width: 100%;
   padding: 60px;
   margin-top: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
 }
 
 .caracteristicas__lista {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .caracteristicas__item {
-  align-items: center;
   text-align: center;
   padding: 10px;
 }
 .caracteristicas__item dd {
   margin: 0;
-  transition: 0.5s;
 }
-.caracteristicas__item h3 {
+.caracteristicas__item h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 30px;
   color: #12112E;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 15px 0 15px 0;
 }
 .caracteristicas__item p {
   font-family: "Montserrat", sans-serif;
@@ -245,9 +242,9 @@
   color: #12112E;
   margin: 5px 50px 5px 50px;
 }
-.caracteristicas__item i {
-  font-size: 70px;
+.caracteristicas__item .ba::before {
   color: #12112E;
+  font-size: 70px;
 }
 
 .tour {
@@ -273,6 +270,10 @@
   background-size: cover;
   opacity: 0.5;
   z-index: -1;
+}
+.tour__titulo, .tour__informacion {
+  display: flex;
+  align-items: center;
 }
 .tour__titulo {
   grid-area: area1;
@@ -527,6 +528,7 @@
 
 .albumes-taylor {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -579,7 +581,7 @@
   margin: 5px 0;
   opacity: 100%;
 }
-.albumes-taylor .album-text h3, .albumes-taylor .reputation-text h3, .albumes-taylor .red-text h3, .albumes-taylor .speaknow-text h3, .albumes-taylor .fearless-text h3 {
+.albumes-taylor .album-text p, .albumes-taylor .reputation-text p, .albumes-taylor .red-text p, .albumes-taylor .speaknow-text p, .albumes-taylor .fearless-text p {
   font-size: 20px;
   font-weight: 300;
   margin-top: 5px;
@@ -617,66 +619,61 @@
   justify-content: center;
 }
 .disco__taylor {
-  margin: 50px 50px 50px 50px;
+  margin: 50px;
 }
 .disco ol {
   list-style: none;
   padding: 0;
 }
-.disco__li {
+.disco .disco__li {
   display: flex;
   flex-direction: column;
   padding: 30px;
-}
-.disco__li .discos-base, .disco__li .disco__li.reputation, .disco__li .disco__li.red, .disco__li .disco__li.speaknow, .disco__li .disco__li.fearless {
+  margin-bottom: 30px;
   background-size: cover;
   width: 100%;
   display: flex;
   align-items: flex-start;
 }
-.disco__li.fearless {
+.disco .disco__li.fearless {
   background: url("../assets/images/disco-fearless.webp");
-  margin-bottom: 30px;
 }
-.disco__li.speaknow {
+.disco .disco__li.speaknow {
   background: url("../assets/images/disco-speaknow.webp");
-  margin-bottom: 30px;
 }
-.disco__li.red {
+.disco .disco__li.red {
   background: url("../assets/images/disco-red.webp");
-  margin-bottom: 30px;
 }
-.disco__li.reputation {
+.disco .disco__li.reputation {
   background: url("../assets/images/disco-reputation.webp");
-  margin-bottom: 30px;
 }
-.disco__title, .disco__description, .disco__year {
-  margin: 20px 0px 20px 20px;
-}
-.disco__title {
+.disco .disco__li .disco__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 40px;
   color: #FFF;
+  margin: 20px 0px 20px 20px;
 }
-.disco__description {
+.disco .disco__li .disco__description {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #FFF;
+  margin: 20px 0px 20px 20px;
 }
-.disco__year {
+.disco .disco__li .disco__year {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #FFF;
+  margin: 20px 0px 20px 20px;
 }
-.disco__spotify {
+.disco .disco__li .disco__spotify {
   display: flex;
   align-items: center;
   align-self: center;
 }
-.disco__spotify iframe {
+.disco .disco__li .disco__spotify iframe {
   border-radius: 12px;
   width: 400px;
   height: 450px;
@@ -731,7 +728,7 @@
   display: flex;
   column-gap: 1rem;
   position: absolute;
-  bottom: 2.25rem;
+  bottom: 1.25rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -857,10 +854,10 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 50vh;
   max-height: 100%;
-  align-items: center;
-  justify-content: center;
 }
 .curiosidades h1 {
   text-align: center;
@@ -939,25 +936,36 @@
   font-size: 16px;
   color: #B7B7B7;
   line-height: 30px;
-  font-weight: 400;
   margin-left: 15px;
 }
 
-.carousel-inner, .carousel-item, .carousel-item img {
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
   height: 500px;
   object-fit: cover;
 }
-.carousel-inner h3, .carousel-item h3, .carousel-item img h3 {
+.carousel-inner h3,
+.carousel-item h3,
+.carousel-item img h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 25px;
   color: #FFF;
 }
-.carousel-inner p, .carousel-item p, .carousel-item img p {
+.carousel-inner p,
+.carousel-item p,
+.carousel-item img p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #FFF;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 9px;
+  width: 9px;
+  border-radius: 100%;
 }
 
 .carousel-item::before {
@@ -1044,12 +1052,12 @@
 
 .contacto {
   position: relative;
-  min-height: 100vh;
-  padding: 50px 100px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  min-height: 100vh;
+  padding: 50px 100px;
   background: url("../assets/images/contacto-background.webp");
   background-size: cover;
 }
@@ -1076,6 +1084,7 @@
 .container {
   width: 100%;
   display: flex;
+  flex-direction: flex;
   justify-content: center;
   align-items: center;
 }
@@ -1264,38 +1273,6 @@
   .hero__section hr {
     width: 100px;
   }
-  .tour {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "area1" "c1" "c2" "area4";
-  }
-  .tour__columnauno {
-    grid-area: c1;
-    justify-self: flex-start;
-    margin: 30px 0 0 0;
-  }
-  .tour ol li {
-    list-style: none;
-    padding: 0;
-    margin-left: 0;
-    margin-bottom: 0;
-  }
-  .tour ol {
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-  .tour__columnados {
-    grid-area: c2;
-    justify-self: flex-start;
-    margin-bottom: 30px;
-  }
-  .tour__informacion {
-    justify-content: flex-start;
-  }
-  .tour__informacion p {
-    text-align: left;
-    padding: 0;
-  }
   .caracteristicas__lista {
     display: flex;
     justify-content: center;
@@ -1319,7 +1296,7 @@
     width: 70px;
     height: 70px;
   }
-  .caracteristicas__item h3 {
+  .caracteristicas__item h2 {
     font-size: 25px;
     margin: 10px 0;
   }
@@ -1327,6 +1304,35 @@
     font-size: 16px;
     margin: 0;
     padding: 0 20px;
+  }
+  .tour {
+    padding: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "area1" "c1" "c2" "area4";
+  }
+  .tour__titulo hr {
+    width: 0;
+  }
+  .tour__columnauno, .tour__columnados {
+    justify-self: flex-start;
+    margin: 30px 0;
+  }
+  .tour__columnados {
+    margin-top: -24px;
+  }
+  .tour ol li,
+  .tour ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .tour .tour__informacion {
+    justify-content: flex-start;
+  }
+  .tour .tour__informacion p {
+    text-align: left;
+    padding: 0;
   }
 }
 @media (max-width: 430px) {
@@ -1491,74 +1497,77 @@
   }
 }
 @media (max-width: 550px) {
+  .albumes-taylor {
+    padding: 20px;
+  }
   .album .fearless-text h2,
   .album .speaknow-text h2,
   .album .red-text h2,
   .album .reputation-text h2 {
     font-size: 35px;
   }
-  .album .fearless-text h3,
-  .album .speaknow-text h3,
-  .album .red-text h3,
-  .album .reputation-text h3 {
+  .album .fearless-text p,
+  .album .speaknow-text p,
+  .album .red-text p,
+  .album .reputation-text p {
     font-size: 16px;
   }
-}
-.disco__title, .disco__description, .disco__year {
-  margin: 20px 0px 20px 5px;
-}
-.disco__title {
-  font-size: 30px;
-}
-.disco__spotify {
-  margin-left: 5px;
-}
-.disco__spotify iframe {
-  width: 300px;
-  height: 400px;
-}
-
-@media (max-width: 550px) {
-  .albumes-taylor {
-    padding: 20px;
+  .disco {
+    padding: 0px;
   }
-  .disco__li {
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
+  .disco .disco__li {
+    padding: 15px;
   }
-  .disco__title, .disco__description, .disco__year {
-    margin: 20px 0px 20px 10px;
-  }
-  .disco__title {
+  .disco .disco__li .disco__title {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 30px;
     color: #FFF;
+    margin: 20px 0px 20px 10px;
   }
-  .disco__description {
+  .disco .disco__li .disco__description {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #FFF;
+    margin: 20px 0px 20px 10px;
   }
-  .disco__spotify iframe {
-    width: 250px;
-    height: 100px;
+  .disco .disco__li .disco__year {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFF;
+    margin: 20px 0px 20px 10px;
+  }
+  .disco .disco__li .disco__spotify iframe {
+    width: 300px;
+    height: 450px;
   }
 }
 @media (max-width: 400px) {
-  .disco__li {
-    display: flex;
-    flex-direction: column;
+  .disco {
     padding: 10px;
   }
-  .disco__li .discos-base, .disco__li .disco__li.fearless, .disco__li .disco__li.speaknow, .disco__li .disco__li.red, .disco__li .disco__li.reputation {
-    background-size: cover;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    align-items: flex-start;
+  .disco__taylor {
+    margin: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .disco .disco__li {
+    padding: 15px;
+    padding-bottom: 0px;
+  }
+  .disco .disco__li .disco__spotify iframe {
+    width: 250px;
+    height: 150px;
+  }
+}
+@media (max-width: 350px) {
+  .album .fearless-text h2,
+  .album .speaknow-text h2,
+  .album .red-text h2,
+  .album .reputation-text h2 {
+    font-size: 20px;
   }
 }
 @media (max-width: 700px) {
@@ -1585,6 +1594,13 @@
     width: 350px;
     height: 200px;
   }
+  .slider-nav {
+    bottom: 1rem;
+  }
+  .slider-nav a {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
 }
 @media (max-width: 400px) {
   .galeria__imagenes img {
@@ -1594,6 +1610,13 @@
   .videos__galeria iframe {
     width: 250px;
     height: 125px;
+  }
+  .slider-nav {
+    bottom: 13px;
+  }
+  .slider-nav a {
+    width: 0.3rem;
+    height: 0.3rem;
   }
 }
 @media (max-width: 1920px) {
@@ -1610,6 +1633,10 @@
 @media (max-width: 450px) {
   .cards {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .carousel-indicators [data-bs-target] {
+    height: 5px;
+    width: 5px;
   }
 }
 @media (max-width: 450px) {
@@ -1633,7 +1660,9 @@
   }
 }
 @media (max-width: 1000px) {
-  .carousel-inner, .carousel-item, .carousel-item img {
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item img {
     height: 100%;
     object-fit: cover;
   }
