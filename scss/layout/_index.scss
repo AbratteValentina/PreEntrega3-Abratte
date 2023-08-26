@@ -138,12 +138,12 @@
 
     &__columnauno .info {
         grid-area: c1;
-        @include columna-tourpropiedades(20px, 24px, 16px, 15px, #ff0000);
+        @include columna-tourpropiedades(20px, 24px, 16px, 25px, #ff0000);
     }
 
     &__columnados .info {
         grid-area: c2;
-        @include columna-tourpropiedades(20px, 24px, 16px, 15px, #ff0000);
+        @include columna-tourpropiedades(20px, 24px, 16px, 25px, #ff0000);
     }
 
     &__informacion {

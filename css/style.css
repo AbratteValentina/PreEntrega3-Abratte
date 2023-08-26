@@ -334,9 +334,10 @@
 .tour__columnauno .info__status {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 25px;
   color: #ff0000;
   margin: 2px 20px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 .tour__columnados .info {
   grid-area: c2;
@@ -379,9 +380,10 @@
 .tour__columnados .info__status {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 25px;
   color: #ff0000;
   margin: 2px 20px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 .tour__informacion {
   grid-area: area4;
@@ -868,7 +870,7 @@
   letter-spacing: 3px;
 }
 
-.taylor-cards {
+.tarjetas {
   background-color: #08081c;
   height: 100%;
   display: grid;
@@ -876,15 +878,13 @@
   font-family: "Montserrat", sans-serif;
   padding: 50px 0 50px 0;
 }
-
-.cards {
+.tarjetas__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding: 20px;
   grid-gap: 40px;
 }
-
-.card {
+.tarjetas__card {
   background-color: #12112E;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
@@ -907,17 +907,20 @@
   top: 0;
   left: 0;
   border-radius: 20px 20px 0 0;
-  opacity: 0.7;
-  transition: 0.5s ease;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .card-container.gradient:hover::after {
   background-image: linear-gradient(135deg, #12112E, #ff9900);
+  opacity: 0.7;
 }
 .card-container.gradientdos:hover::after {
   background-image: linear-gradient(135deg, #12112E, #0100ec);
+  opacity: 0.7;
 }
 .card-container.gradienttres:hover::after {
   background-image: linear-gradient(135deg, #12112E, #fb36f4);
+  opacity: 0.7;
 }
 
 .cards__detalles {
@@ -1194,7 +1197,7 @@
 
 .mapa {
   margin-top: 50px;
-  width: 50vh;
+  width: 100%;
   height: 40vh;
 }
 .mapa iframe {
@@ -1380,9 +1383,10 @@
   .tour__columnauno .info__status {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 22px;
     color: #ff0000;
     margin: 2px 20px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   }
   .tour__columnados .info {
     grid-area: c1;
@@ -1425,9 +1429,10 @@
   .tour__columnados .info__status {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 22px;
     color: #ff0000;
     margin: 2px 20px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   }
 }
 @media (max-width: 1620px) {
@@ -1631,17 +1636,12 @@
   }
 }
 @media (max-width: 450px) {
-  .cards {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .tarjetas__cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .carousel-indicators [data-bs-target] {
     height: 5px;
     width: 5px;
-  }
-}
-@media (max-width: 450px) {
-  .cards {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 @media (max-width: 400px) {
@@ -1693,13 +1693,6 @@
     width: 100%;
   }
 }
-@media (max-width: 630px) {
-  .mapa {
-    margin-top: 50px;
-    width: 30vh;
-    height: 20vh;
-  }
-}
 @media (max-width: 450px) {
   .contacto {
     padding: 30px;
@@ -1720,9 +1713,8 @@
     font-size: 18px;
   }
   .mapa {
-    margin-top: 50px;
-    width: 20vh;
-    height: 20vh;
+    padding: 10px;
+    height: 30vh;
   }
 }
 

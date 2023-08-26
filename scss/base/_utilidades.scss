@@ -61,5 +61,6 @@
     &__status {
         @include fuente-personalizada(500, $status-size, $status-color);
         margin: 2px 20px;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
 }

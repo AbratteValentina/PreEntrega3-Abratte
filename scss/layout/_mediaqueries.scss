@@ -182,12 +182,12 @@
 
         &__columnauno .info {
             grid-area: c1;
-            @include columna-tourpropiedades(16px, 20px, 16px, 15px, #ff0000);
+            @include columna-tourpropiedades(16px, 20px, 16px, 22px, #ff0000);
         }
 
         &__columnados .info {
             grid-area: c1;
-            @include columna-tourpropiedades(16px, 20px, 16px, 15px, #ff0000);
+            @include columna-tourpropiedades(16px, 20px, 16px, 22px, #ff0000);
         }
     }
 }
@@ -449,19 +449,13 @@
 
 //cards
 @media (max-width: 450px) {
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    .tarjetas__cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     .carousel-indicators [data-bs-target] {
         height: 5px;
         width: 5px;
-    }
-}
-
-@media (max-width: 450px) {
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 
@@ -528,15 +522,6 @@
     }
 }
 
-// mapa media queries 
-@media (max-width: 630px) {
-    .mapa {
-        margin-top: 50px;
-        width: 30vh;
-        height: 20vh;
-    }
-}
-
 @media (max-width: 450px) {
     .contacto {
         padding: 30px;
@@ -563,8 +548,7 @@
     }
 
     .mapa {
-        margin-top: 50px;
-        width: 20vh;
-        height: 20vh;
+        padding: 10px;
+        height: 30vh;
     }
 }

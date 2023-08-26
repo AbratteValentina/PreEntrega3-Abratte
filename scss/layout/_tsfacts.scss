@@ -33,26 +33,26 @@
 }
 
 //cards
-.taylor-cards {
+.tarjetas {
 	background-color: #08081c;
 	height: 100%;
 	display: grid;
 	place-items: center center;
 	font-family: 'Montserrat', sans-serif;
 	padding: 50px 0 50px 0;
-}
 
-.cards {
+	&__cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	padding: 20px;
 	grid-gap: 40px;
-}
+	}
 
-.card {
+	&__card {
 	background-color: $primary-color;
 	border-radius: 20px;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+	}
 }
 
 .card-container {
@@ -73,32 +73,23 @@
 		top: 0;
 		left: 0;
 		border-radius: 20px 20px 0 0;
+        opacity: 0;
+        transition: opacity 0.5s ease; 
+	}
+
+	&.gradient:hover::after {
+		background-image: linear-gradient(135deg, #12112E, #ff9900);
 		opacity: 0.7;
-		transition: 0.5s ease;
 	}
 
-	&.gradient {
-		&:hover {
-			&::after {
-				background-image: linear-gradient(135deg, #12112E, #ff9900);
-			}
-		}
+	&.gradientdos:hover::after {
+		background-image: linear-gradient(135deg, #12112E, #0100ec);
+		opacity: 0.7;
 	}
 
-	&.gradientdos {
-		&:hover {
-			&::after {
-				background-image: linear-gradient(135deg, #12112E, #0100ec);
-			}
-		}
-	}
-
-	&.gradienttres {
-		&:hover {
-			&::after {
-				background-image: linear-gradient(135deg, #12112E, #fb36f4);
-			}
-		}
+	&.gradienttres:hover::after {
+		background-image: linear-gradient(135deg, #12112E, #fb36f4);
+		opacity: 0.7;
 	}
 }
 
