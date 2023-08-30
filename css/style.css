@@ -1588,6 +1588,7 @@
   .disco__taylor {
     margin: 0px;
     padding: 0px;
+    padding-block-end: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
