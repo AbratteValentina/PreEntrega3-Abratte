@@ -42,16 +42,16 @@
 	padding: 50px 0 50px 0;
 
 	&__cards {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	padding: 20px;
-	grid-gap: 40px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		padding: 20px;
+		grid-gap: 40px;
 	}
 
 	&__card {
-	background-color: $primary-color;
-	border-radius: 20px;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+		background-color: $primary-color;
+		border-radius: 20px;
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
 	}
 }
 
@@ -73,8 +73,8 @@
 		top: 0;
 		left: 0;
 		border-radius: 20px 20px 0 0;
-        opacity: 0;
-        transition: opacity 0.5s ease; 
+		opacity: 0;
+		transition: opacity 0.5s ease;
 	}
 
 	&.gradient:hover::after {
@@ -176,6 +176,29 @@
 	padding: 10px;
 	box-sizing: border-box;
 	@include flex-properties(column, center, center);
+	transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+
+	h4 {
+		transition: color 0.5s ease;
+	}
+
+	p {
+		transition: color 0.5s ease;
+	}
+
+	&:hover {
+		background-color: $accent-color;
+		border: none;
+		transform: scale(1.1);
+
+		h4 {
+			color: $text-color;
+		}
+
+		p {
+			color: $primary-color;
+		}
+	}
 
 	h4 {
 		@include fuente-personalizada(700, 35px, $accent-color);

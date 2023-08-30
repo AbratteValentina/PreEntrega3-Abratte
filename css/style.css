@@ -623,59 +623,63 @@
 .disco__taylor {
   margin: 50px;
 }
-.disco ol {
-  list-style: none;
-  padding: 0;
-}
-.disco .disco__li {
+.disco .disco__nombre {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 30px;
   margin-bottom: 30px;
-  background-size: cover;
   width: 100%;
-  display: flex;
   align-items: flex-start;
 }
-.disco .disco__li.fearless {
+.disco .disco__nombre .disco__content {
+  margin-right: 170px;
+}
+.disco .disco__nombre.fearless {
   background: url("../assets/images/disco-fearless.webp");
+  background-size: cover;
+  align-items: center;
 }
-.disco .disco__li.speaknow {
+.disco .disco__nombre.speaknow {
   background: url("../assets/images/disco-speaknow.webp");
+  background-size: cover;
+  align-items: center;
 }
-.disco .disco__li.red {
+.disco .disco__nombre.red {
   background: url("../assets/images/disco-red.webp");
+  background-size: cover;
+  align-items: center;
+  opacity: 1;
 }
-.disco .disco__li.reputation {
+.disco .disco__nombre.reputation {
   background: url("../assets/images/disco-reputation.webp");
+  background-size: cover;
+  align-items: center;
 }
-.disco .disco__li .disco__title {
+.disco .disco__nombre .disco__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 40px;
   color: #FFF;
   margin: 20px 0px 20px 20px;
 }
-.disco .disco__li .disco__description {
+.disco .disco__nombre .disco__description {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #FFF;
   margin: 20px 0px 20px 20px;
 }
-.disco .disco__li .disco__year {
+.disco .disco__nombre .disco__year {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #FFF;
   margin: 20px 0px 20px 20px;
 }
-.disco .disco__li .disco__spotify {
-  display: flex;
-  align-items: center;
-  align-self: center;
+.disco .disco__nombre .disco__spotify {
+  margin: 25px 30px 0 0;
 }
-.disco .disco__li .disco__spotify iframe {
+.disco .disco__nombre .disco__spotify iframe {
   border-radius: 12px;
   width: 400px;
   height: 450px;
@@ -1021,6 +1025,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+}
+.rectangulo h4 {
+  transition: color 0.5s ease;
+}
+.rectangulo p {
+  transition: color 0.5s ease;
+}
+.rectangulo:hover {
+  background-color: #6F99AF;
+  border: none;
+  transform: scale(1.1);
+}
+.rectangulo:hover h4 {
+  color: #FFF;
+}
+.rectangulo:hover p {
+  color: #12112E;
 }
 .rectangulo h4 {
   font-family: "Montserrat", sans-serif;
@@ -1480,99 +1502,103 @@
     z-index: -1;
   }
 }
-@media (max-width: 920px) {
-  .eras {
-    display: flex;
-    width: 100%;
-    height: 800px;
-    background-color: #12112E;
-  }
-  .eras img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: 0.8;
-    transition: 0.5s ease;
-  }
+@media (max-width: 400px) {
   .eras img:hover {
-    cursor: crosshair;
-    width: 200px;
-    opacity: 1;
-    filter: contrast(120%);
+    width: 150px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 480px) {
   .albumes-taylor {
     padding: 20px;
   }
-  .album .fearless-text h2,
-  .album .speaknow-text h2,
-  .album .red-text h2,
-  .album .reputation-text h2 {
-    font-size: 35px;
+  .album-text h2, .albumes-taylor .fearless-text h2, .albumes-taylor .speaknow-text h2, .albumes-taylor .red-text h2, .albumes-taylor .reputation-text h2 {
+    font-size: 28px;
   }
-  .album .fearless-text p,
-  .album .speaknow-text p,
-  .album .red-text p,
-  .album .reputation-text p {
+  .album-text p, .albumes-taylor .fearless-text p, .albumes-taylor .speaknow-text p, .albumes-taylor .red-text p, .albumes-taylor .reputation-text p {
     font-size: 16px;
   }
-  .disco {
-    padding: 0px;
+}
+@media (max-width: 1100px) {
+  .disco .disco__nombre {
+    display: flex;
+    flex-direction: column;
   }
-  .disco .disco__li {
+  .disco .disco__nombre .disco__content {
+    margin-right: 40px;
+  }
+  .disco .disco__nombre.fearless {
+    background-position: center center;
+  }
+  .disco .disco__nombre.speaknow {
+    background-position: center center;
+  }
+  .disco .disco__nombre.red {
+    background-position: center center;
+  }
+  .disco .disco__nombre.reputation {
+    background-position: center center;
+  }
+  .disco .disco__nombre .disco__spotify {
+    margin: 25px 0 0 0;
+    align-self: center;
+  }
+}
+@media (max-width: 540px) {
+  .disco {
+    padding: 0px 20px 0px 20px;
+  }
+  .disco .disco__nombre {
     padding: 15px;
   }
-  .disco .disco__li .disco__title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: #FFF;
-    margin: 20px 0px 20px 10px;
+  .disco .disco__nombre .disco__content {
+    margin-right: 20px;
   }
-  .disco .disco__li .disco__description {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFF;
-    margin: 20px 0px 20px 10px;
-  }
-  .disco .disco__li .disco__year {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFF;
-    margin: 20px 0px 20px 10px;
-  }
-  .disco .disco__li .disco__spotify iframe {
+  .disco .disco__nombre .disco__spotify iframe {
     width: 300px;
     height: 450px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   .disco {
+    padding: 0px 0px 0px 0px;
+  }
+  .disco .disco__nombre {
     padding: 10px;
   }
-  .disco__taylor {
-    margin: 50px;
-    margin-left: 70px;
-    margin-right: 70px;
+  .disco .disco__nombre .disco__content {
+    margin-right: 0px;
   }
-  .disco .disco__li {
-    padding: 15px;
-    padding-bottom: 0px;
+  .disco .disco__nombre .disco__title {
+    font-size: 30px;
+    margin-left: 10px;
   }
-  .disco .disco__li .disco__spotify iframe {
-    width: 250px;
-    height: 150px;
+  .disco .disco__nombre .disco__description {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .disco .disco__nombre .disco__year {
+    margin-left: 10px;
+  }
+  .disco .disco__nombre .disco__spotify iframe {
+    width: 270px;
+    height: 100px;
   }
 }
 @media (max-width: 350px) {
-  .album .fearless-text h2,
-  .album .speaknow-text h2,
-  .album .red-text h2,
-  .album .reputation-text h2 {
-    font-size: 20px;
+  .disco__taylor {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .disco .disco__nombre {
+    padding: 10px;
+    margin: -4px;
+  }
+  .disco .disco__nombre .disco__spotify iframe {
+    width: 225px;
   }
 }
 @media (max-width: 700px) {
